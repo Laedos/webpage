@@ -7,26 +7,33 @@ section. Plain HTML/CSS/JS — no build step, no dependencies, no framework.
 
 ```
 index.html    page structure
-styles.css    all styling
+styles.css    all styling (shared by the homepage and app detail pages)
 projects.js   portfolio data (edit this to add/remove projects)
-script.js     renders the project cards + footer year
+script.js     renders the project cards on the homepage
+year.js       footer year, shared by every page
 assets/       logo.png (SB Dev Works logo)
+apps/         one detail page per project (apps/<slug>.html)
 ```
 
 ## Adding a project
 
-Open `projects.js` and add one object to the `PROJECTS` array:
+1. Open `projects.js` and add one object to the `PROJECTS` array:
 
-```js
-{
-  name: "MyNewApp",
-  blurb: "One sentence about what it does.",
-  tags: ["Android", "Kotlin"],
-  url: null, // or a link to the repo/store listing once it's public
-},
-```
+   ```js
+   {
+     name: "MyNewApp",
+     slug: "my-new-app",       // used for apps/my-new-app.html
+     blurb: "One sentence about what it does.",
+     tags: ["Android", "Kotlin"],
+     url: null, // or a link to the repo/store listing once it's public
+   },
+   ```
 
-Nothing else needs to change — the page renders whatever is in that array.
+2. Copy an existing file in `apps/` to `apps/<slug>.html` and edit the title, tagline,
+   overview, features, and "Built with" sections.
+
+The homepage card is generated automatically from `projects.js` and links to
+`apps/<slug>.html`.
 
 ## Contact info
 
