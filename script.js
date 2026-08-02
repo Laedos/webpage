@@ -1,15 +1,9 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
 const grid = document.getElementById("project-grid");
 
 for (const project of PROJECTS) {
-  const card = document.createElement(project.url ? "a" : "div");
+  const card = document.createElement("a");
   card.className = "project-card";
-  if (project.url) {
-    card.href = project.url;
-    card.target = "_blank";
-    card.rel = "noopener";
-  }
+  card.href = `apps/${project.slug}.html`;
 
   const title = document.createElement("h3");
   title.textContent = project.name;

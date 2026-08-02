@@ -225,6 +225,96 @@ a.project-card:hover {
   vertical-align: middle;
 }
 
+/* App detail pages */
+
+.back-link {
+  display: inline-block;
+  margin: 32px 0 0;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+.detail-hero {
+  padding: 32px 0 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-hero h1 {
+  font-size: 2.25rem;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.detail-tagline {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin: 0 0 20px;
+  max-width: 640px;
+}
+
+.status-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7ee0a8;
+  background: rgba(126, 224, 168, 0.1);
+  border: 1px solid rgba(126, 224, 168, 0.3);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-bottom: 20px;
+}
+
+.detail-section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-section:last-of-type {
+  border-bottom: none;
+}
+
+.detail-section h2 {
+  font-size: 1.25rem;
+  margin: 0 0 16px;
+}
+
+.detail-section p {
+  color: var(--muted);
+  max-width: 680px;
+  margin: 0;
+}
+
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  max-width: 680px;
+}
+
+.feature-list li {
+  color: var(--muted);
+  padding-left: 22px;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
+}
+
 /* Footer */
 
 .site-footer {

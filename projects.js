@@ -1,45 +1,47 @@
-// Portfolio data. To add a project, add another object to this array —
-// nothing else on the page needs to change.
+// Portfolio data. To add a project:
+//   1. add an object below
+//   2. create apps/<slug>.html for its detail page (copy an existing one as a template)
+// Nothing else on the page needs to change.
 //
 // name:  project name
+// slug:  used for the detail page filename (apps/<slug>.html)
 // blurb: one-sentence description
 // tags:  short list of tech/platform labels
 // url:   link to the repo or app (leave as null if there isn't a public one yet)
 const PROJECTS = [
   {
     name: "ArcheryHelper",
+    slug: "archeryhelper",
     blurb: "Track bows, arrows, strings, sessions and maintenance for archery equipment.",
     tags: ["Android", "Kotlin", "Compose"],
     url: null,
   },
   {
-    name: "CarHelper",
-    blurb: "Vehicle maintenance and service history tracker.",
-    tags: ["Android", "Kotlin"],
+    name: "My Garage",
+    slug: "my-garage",
+    blurb: "Vehicle maintenance, expenses, and documents for your garage.",
+    tags: ["Android", "Kotlin", "Compose"],
     url: null,
   },
   {
     name: "HomelyEasy",
-    blurb: "Home management, made simple.",
-    tags: ["Android", "Kotlin"],
+    slug: "homelyeasy",
+    blurb: "Simple home management for shared households.",
+    tags: ["Android", "Kotlin", "Spring Boot"],
     url: null,
   },
   {
     name: "EasyPoll",
-    blurb: "Quick polls and group decisions.",
-    tags: ["Android", "Kotlin"],
-    url: null,
-  },
-  {
-    name: "LifeStack",
-    blurb: "Personal organization and life tracking.",
-    tags: ["Android", "Kotlin"],
+    slug: "easypoll",
+    blurb: "Create and share anonymous polls in seconds.",
+    tags: ["Kotlin", "React", "TypeScript"],
     url: null,
   },
   {
     name: "PairProgrammer",
-    blurb: "AI-assisted pair programming tool.",
-    tags: ["TypeScript"],
+    slug: "pairprogrammer",
+    blurb: "Rotation scheduling for pair-programming teams.",
+    tags: ["Kotlin", "React", "React Native"],
     url: null,
   },
 ];
