@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Garage — SB Dev Works</title>
+  <meta name="description" content="My Garage: an Android app for vehicle maintenance, expenses, and documents." />
+  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <span class="brand-name">SB Dev Works</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+
+      <section class="detail-hero">
+        <div class="status-pill">v1 feature set complete</div>
+        <h1>My Garage</h1>
+        <p class="detail-tagline">
+          Personal garage management for Android — vehicles, maintenance, expenses, repairs,
+          budgets, road trips, documents, and fuel tracking.
+        </p>
+        <div class="tags">
+          <span class="tag">Android</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Jetpack Compose</span>
+          <span class="tag">Material 3</span>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Overview</h2>
+        <p>
+          My Garage keeps every vehicle's maintenance, expenses, repairs, and paperwork in one
+          offline-first app. It shares its architecture and engineering conventions with
+          ArcheryHelper, and adds budgets, road trips, and fuel logging on top of the same
+          equipment-tracking foundation.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Key features</h2>
+        <ul class="feature-list">
+          <li>Vehicle profiles with maintenance, expense, and planned-repair tracking</li>
+          <li>Budgets with progress tracking, and road trips with mileage and photos</li>
+          <li>Documents with issue/expiry dates and reminders for what's due</li>
+          <li>Statistics: spending breakdown and per-vehicle summaries</li>
+          <li>Quick Add bottom sheet for fast logging of expenses, maintenance, or fuel</li>
+          <li>Fuel log with consumption and cost-per-distance tracking</li>
+          <li>Offline-first, with full backup/export to a zip file</li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>Built with</h2>
+        <p>
+          Kotlin, Jetpack Compose, Material 3, MVVM + Clean Architecture, Hilt, Room, DataStore,
+          Navigation Compose.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SB Dev Works</p>
+    </div>
+  </footer>
+
+  <script src="../year.js"></script>
+</body>
+</html>
