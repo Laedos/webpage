@@ -44,4 +44,11 @@ const PROJECTS = [
     tags: ["Kotlin", "React", "React Native"],
     url: null,
   },
+  {
+    name: "procrast.io",
+    slug: "procrastio",
+    blurb: "An early-stage desktop focus/productivity app.",
+    tags: ["Kotlin", "JavaFX"],
+    url: null,
+  },
 ];
