@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>procrast.io — SB Dev Works</title>
+  <meta name="description" content="procrast.io: an early-stage JavaFX desktop focus/productivity app." />
+  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <span class="brand-name">SB Dev Works</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+
+      <section class="detail-hero">
+        <div class="status-pill">Early prototype</div>
+        <h1>procrast.io</h1>
+        <p class="detail-tagline">
+          An early-stage JavaFX desktop app for staying focused — currently a system-tray-capable
+          scaffold, with the real feature set still to come.
+        </p>
+        <div class="tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">JavaFX</span>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Overview</h2>
+        <p>
+          procrast.io is a Kotlin + JavaFX desktop app that minimizes to the system tray and stays
+          running in the background. The name points at a focus/anti-procrastination tool, but the
+          project is still at the scaffolding stage — no tracking, timing, or blocking features are
+          built yet.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Key features</h2>
+        <ul class="feature-list">
+          <li>System tray integration — minimizes instead of closing, with a Show/Close menu</li>
+          <li>JavaFX window shell ready for a real UI to be built on top</li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>Built with</h2>
+        <p>
+          Kotlin, JavaFX, ControlsFX, Ikonli, Maven.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SB Dev Works</p>
+    </div>
+  </footer>
+
+  <script src="../year.js"></script>
+</body>
+</html>
