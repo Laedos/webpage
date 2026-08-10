@@ -10,12 +10,20 @@
 // with no test suite — any change touching a .js file would fail that condition every time,
 // making the gate permanently red rather than meaningful. Findings still show up on the SonarQube
 // dashboard for manual review; they just don't block the build here.
+//
+// Gitleaks + Trivy: same tools/shape as every sibling repo's pipeline, report-only for now
+// (`|| true`) — matches RentEasy's rollout. Trivy is expected to find essentially nothing here
+// (no package.json/dependency manifest exists in this repo to scan), kept anyway for pipeline-
+// shape consistency across all sibling repos rather than carving out an exception.
 pipeline {
     agent any
     options {
         timeout(time: 10, unit: 'MINUTES')
         timestamps()
         ansiColor('xterm')
+    }
+    environment {
+        CACHE_KEY = "${env.JOB_NAME}".replaceAll(/[^a-zA-Z0-9_.-]/, '-')
     }
     stages {
         stage('Analyze') {
@@ -30,9 +38,32 @@ pipeline {
                 }
             }
         }
+        stage('Gitleaks: secret scan') {
+            steps {
+                script {
+                    docker.image('zricethezav/gitleaks:latest').inside {
+                        sh 'gitleaks detect --source=. -v --redact --report-format=json ' +
+                           '--report-path=gitleaks-report.json || true'
+                    }
+                }
+            }
+        }
+        stage('Dependency scan: Trivy') {
+            steps {
+                script {
+                    docker.image('aquasec/trivy:latest').inside(
+                        "--network ci-internal -v trivy-cache-${env.CACHE_KEY}:/root/.cache/trivy"
+                    ) {
+                        sh 'trivy fs --scanners vuln --severity HIGH,CRITICAL --format json ' +
+                           '--output trivy-report.json . || true'
+                    }
+                }
+            }
+        }
     }
     post {
         always {
+            archiveArtifacts artifacts: 'gitleaks-report.json,trivy-report.json', allowEmptyArchive: true
             cleanWorkspace()
         }
     }
