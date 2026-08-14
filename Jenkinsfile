@@ -41,7 +41,11 @@ pipeline {
         stage('Gitleaks: secret scan') {
             steps {
                 script {
-                    docker.image('zricethezav/gitleaks:latest').inside {
+                    // --entrypoint="" — zricethezav/gitleaks:latest bakes in ENTRYPOINT ["gitleaks"],
+                    // which turns .inside()'s keep-container-alive `cat` placeholder into `gitleaks
+                    // cat` (an unknown subcommand) and kills the container before Jenkins can exec
+                    // into it ("container is not running"). Same fix applied to Trivy below.
+                    docker.image('zricethezav/gitleaks:latest').inside('--entrypoint=""') {
                         sh 'gitleaks detect --source=. -v --redact --report-format=json ' +
                            '--report-path=gitleaks-report.json || true'
                     }
@@ -52,7 +56,7 @@ pipeline {
             steps {
                 script {
                     docker.image('aquasec/trivy:latest').inside(
-                        "--network ci-internal -v trivy-cache-${env.CACHE_KEY}:/root/.cache/trivy"
+                        "--network ci-internal -v trivy-cache-${env.CACHE_KEY}:/root/.cache/trivy --entrypoint=\"\""
                     ) {
                         sh 'trivy fs --scanners vuln --severity HIGH,CRITICAL --format json ' +
                            '--output trivy-report.json . || true'
