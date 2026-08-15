@@ -51,4 +51,11 @@ const PROJECTS = [
     tags: ["Kotlin", "JavaFX"],
     url: null,
   },
+  {
+    name: "RentEasy",
+    slug: "renteasy",
+    blurb: "Leases, rent, documents, and maintenance shared between landlords and tenants.",
+    tags: ["Android", "Kotlin", "Next.js", "Spring Boot"],
+    url: null,
+  },
 ];

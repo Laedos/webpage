@@ -30,7 +30,7 @@ generated).
   stay consistent, don't let them drift into different layouts.
 - `styles.css` is shared by every page (homepage + all `apps/*.html`) — a class added for one page
   is available everywhere; check other pages aren't affected before renaming/removing a class.
-- Keep the six project entries in `projects.js` in sync with what actually exists under `C:\Dev` —
+- Keep the project entries in `projects.js` in sync with what actually exists under `C:\Dev` —
   this file is the one place across all these sibling repos that lists them together.
 
 ## Workflow
