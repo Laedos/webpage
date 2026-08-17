@@ -31,7 +31,7 @@ pipeline {
                 script {
                     runSonarAnalysis {
                         docker.image('sonarsource/sonar-scanner-cli:latest').inside('--network ci-internal') {
-                            sh 'sonar-scanner -Dsonar.projectKey=Laedos_webpage -Dsonar.projectName=webpage ' +
+                            sh 'sonar-scanner -Dsonar.projectKey=webpage -Dsonar.projectName=webpage ' +
                                '-Dsonar.sources=. -Dsonar.exclusions=assets/**'
                         }
                     }
