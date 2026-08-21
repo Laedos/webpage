@@ -25,7 +25,6 @@ apps/         one detail page per project (apps/<slug>.html)
      slug: "my-new-app",       // used for apps/my-new-app.html
      blurb: "One sentence about what it does.",
      tags: ["Android", "Kotlin"],
-     url: null, // or a link to the repo/store listing once it's public
    },
    ```
 

@@ -22,7 +22,6 @@ For each entry in `PROJECTS` (`projects.js`):
       matching file in `apps/`.
 - [ ] The detail page's title, tagline, overview, features, and "Built with" sections are accurate
       and not copy-pasted leftovers from whichever page it was cloned from.
-- [ ] If `url` is set, the link on the detail page works and opens in a new tab.
 
 ## 3. Visual / cross-page checks
 

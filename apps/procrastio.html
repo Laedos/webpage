@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>procrast.io — SB Dev Works</title>
-  <meta name="description" content="procrast.io: an early-stage JavaFX desktop focus/productivity app." />
+  <meta name="description" content="procrast.io: a JavaFX desktop focus timer and website blocker, with a sync backend and Android companion app." />
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
@@ -29,40 +29,43 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">Early prototype</div>
+        <div class="status-pill">In active development</div>
         <h1>procrast.io</h1>
         <p class="detail-tagline">
-          An early-stage JavaFX desktop app for staying focused — currently a system-tray-capable
-          scaffold, with the real feature set still to come.
+          A JavaFX desktop focus timer and website blocker, minimizing to the system tray, with a
+          sync backend and an Android companion app.
         </p>
         <div class="tags">
           <span class="tag">Kotlin</span>
           <span class="tag">JavaFX</span>
+          <span class="tag">Android</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
         <p>
-          procrast.io is a Kotlin + JavaFX desktop app that minimizes to the system tray and stays
-          running in the background. The name points at a focus/anti-procrastination tool, but the
-          project is still at the scaffolding stage — no tracking, timing, or blocking features are
-          built yet.
+          procrast.io is a Kotlin + JavaFX desktop app for staying focused: a work/break focus-session
+          timer and a hosts-file website blocker, minimizing to the system tray and running in the
+          background. A Ktor sync backend and an Android companion app keep focus sessions and
+          blocklists in sync across devices, with a freemium Pro tier for multi-device sync.
         </p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
+          <li>Focus-session timer with work/break phases</li>
+          <li>Website blocking via the system hosts file</li>
           <li>System tray integration — minimizes instead of closing, with a Show/Close menu</li>
-          <li>JavaFX window shell ready for a real UI to be built on top</li>
+          <li>Cross-device sync (desktop + Android) via a Ktor backend, free tier plus a Pro sync tier</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
         <p>
-          Kotlin, JavaFX, ControlsFX, Ikonli, Maven.
+          Kotlin, JavaFX, ControlsFX, Ikonli, Maven, Ktor (sync backend), Android/Compose (mobile companion).
         </p>
       </section>
     </div>
