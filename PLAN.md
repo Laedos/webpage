@@ -4,7 +4,7 @@
 
 Static site, no build step, working and green in CI. `projects.js` (the cross-project sync file)
 is current — all 7 real projects under `C:\Dev` are listed (ArcheryHelper, My Garage, HomelyEasy,
-EasyPoll, PairProgrammer, procrast.io, RentEasy), nothing missing or stale.
+EasyPoll, PairProgrammer, procrast.io, Tenanza), nothing missing or stale.
 
 ## Next steps
 

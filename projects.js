@@ -45,8 +45,8 @@ const PROJECTS = [
     tags: ["Kotlin", "JavaFX", "Android"],
   },
   {
-    name: "RentEasy",
-    slug: "renteasy",
+    name: "Tenanza",
+    slug: "tenanza",
     blurb: "Leases, rent, documents, and maintenance shared between landlords and tenants.",
     tags: ["Android", "Kotlin", "Next.js", "Spring Boot"],
   },
