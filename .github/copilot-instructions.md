@@ -53,7 +53,5 @@ be set to **GitHub Actions** (one-time, no API/tool can do this) before the work
 successfully publish. Until that's flipped, the `deploy-pages` job fails at the deploy step —
 that's expected, not a bug to fix in the workflow.
 
-**Known pre-launch TODO:** `index.html`'s contact section still has a placeholder email
-(`todo@example.com`, marked `TODO` in the HTML) — replace with the real address before
-treating the site as launched. Tracked in `README.md`'s "Contact info" section and item 1 of
-`QA.md`.
+**Contact email:** `index.html`'s contact section links `mailto:sbdevworks@proton.me` — the
+default contact address across every project under `C:\Dev`, not a placeholder.

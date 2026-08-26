@@ -7,8 +7,8 @@ from. No automated tests exist for this site — see [CLAUDE.md](CLAUDE.md) for 
 
 ## 1. Content is real, not placeholder
 
-- [ ] The `TODO: replace with real email` marker and `mailto:todo@example.com` in `index.html`'s
-      contact section have been replaced with a real address (per README's "Contact info" note).
+- [ ] `index.html`'s contact section still links `mailto:sbdevworks@proton.me` (the default
+      contact address across every project under `C:\Dev`), not a placeholder.
 - [ ] The GitHub link (`https://github.com/Laedos`) still points at the right profile.
 - [ ] Every entry in `projects.js` reflects the current state of that project (name, blurb, tags) —
       cross-check against the project's own README.

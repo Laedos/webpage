@@ -36,8 +36,8 @@ The homepage card is generated automatically from `projects.js` and links to
 
 ## Contact info
 
-The contact section currently has placeholder text — look for the `TODO` markers in
-`index.html` (email address) and replace them with real details before this goes live.
+The contact section links `mailto:sbdevworks@proton.me` — the default contact address across
+every project under `C:\Dev`.
 
 ## Hosting
 

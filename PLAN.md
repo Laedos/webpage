@@ -8,9 +8,10 @@ EasyPoll, PairProgrammer, procrast.io, Tenanza), nothing missing or stale.
 
 ## Next steps
 
-1. **Replace the placeholder contact email** — `index.html` still has `mailto:todo@example.com`
-   and a visible "TODO: replace with real email" tag (flagged in QA.md's own pre-publish
-   checklist). Needs your real address; not something to guess.
+1. ~~Replace the placeholder contact email~~ — done: `index.html` now links
+   `mailto:sbdevworks@proton.me`, the "TODO: replace with real email" tag and its now-dead
+   `.todo-tag` CSS class removed. This is the default contact address across every project under
+   `C:\Dev` going forward, not just webpage.
 2. No CI split applies — single static site, no backend/mobile stack to separate.
 
 ## Docs audit
