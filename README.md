@@ -41,20 +41,18 @@ every project under `C:\Dev`.
 
 ## Hosting
 
-This is a fully static site, so any static host works. The simplest option, since the
-code already lives on GitHub, is **GitHub Pages**. A workflow at
-`.github/workflows/deploy-pages.yml` deploys the repo root on every push to `main` using
-GitHub's official Pages actions — no build step involved. To turn it on (one-time):
+Hosted on **GitHub Pages** at **sbdevworks.com**. A workflow at
+`.github/workflows/deploy-pages.yml` deploys the repo root on every push to `main` using GitHub's
+official Pages actions — no build step involved. `CNAME` (repo root) pins the custom domain; the
+`Settings → Pages` custom-domain field is set to match. DNS at the registrar points the apex
+domain at GitHub Pages' four A records (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`) —
+see GitHub's [custom domain docs](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site)
+if the domain ever needs to move to a new registrar/DNS provider. HTTPS enforcement turns on
+automatically once GitHub finishes DNS verification and provisions the certificate (can take up
+to 24h after DNS propagates) — until then the site may only be reachable over plain HTTP.
 
-1. Push this repo to GitHub (already done if you're reading this from the repo).
-2. On GitHub, go to the repo's **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **GitHub Actions**.
-4. Push to `main` (or re-run the workflow from the **Actions** tab) to trigger the first deploy.
-5. GitHub will publish the site at `https://<username>.github.io/<repo-name>/`
-   (a few minutes after the first successful run).
-6. Optional: add a custom domain under the same **Pages** settings once you have one.
-
-Any push to `main` automatically redeploys the live site — no build/deploy step of your own.
+Any push to `main` automatically redeploys the live site — no build/deploy step of your own. The
+old `https://laedos.github.io/webpage/` URL keeps working as a GitHub-provided fallback.
 
 ### Alternatives
 
