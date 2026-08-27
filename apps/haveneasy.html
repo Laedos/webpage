@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EasyPoll — SB Dev Works</title>
-  <meta name="description" content="EasyPoll: a lightweight web app for creating and sharing anonymous polls." />
+  <title>HavenEasy — SB Dev Works</title>
+  <meta name="description" content="HavenEasy: an Android app for simple, shared home management." />
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
@@ -29,46 +29,43 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">Live web app</div>
-        <h1>EasyPoll</h1>
+        <div class="status-pill">In active development</div>
+        <h1>HavenEasy</h1>
         <p class="detail-tagline">
-          A lightweight web app for creating and sharing polls — instant and anonymous, or
-          managed by a registered creator.
+          Simple home management for shared households — tasks, shopping, and bills, kept in
+          sync across everyone in the home.
         </p>
         <div class="tags">
+          <span class="tag">Android</span>
           <span class="tag">Kotlin</span>
-          <span class="tag">Ktor</span>
-          <span class="tag">React</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">PostgreSQL</span>
+          <span class="tag">Jetpack Compose</span>
+          <span class="tag">Spring Boot</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
         <p>
-          EasyPoll lets anyone spin up an anonymous poll in seconds with no account needed, while
-          registered creators get private polls with invites, full lifecycle management, and
-          configurable results visibility.
+          HavenEasy is a Kotlin + Jetpack Compose Android client backed by a Spring Boot API,
+          built for households to coordinate day-to-day life together — chores, shopping lists,
+          and bills — with accounts and home invites so everyone stays on the same page.
         </p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Anonymous polls — instant creation, no account, 90-day expiry</li>
-          <li>Poll templates for quick starts</li>
-          <li>Registered creators: private polls with invite links or email, draft/open/close/archive lifecycle</li>
-          <li>Scheduled auto-close and configurable results visibility (hidden, after vote, after close, or live)</li>
-          <li>Live results with CSV export</li>
+          <li>Shared households via deep-link invites</li>
+          <li>Task, shopping, and bills feature modules</li>
+          <li>Account system with email verification and password reset</li>
+          <li>Debug/release build separation with a configurable API endpoint</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
         <p>
-          Backend: Kotlin, Ktor, Exposed, Flyway, PostgreSQL. Frontend: React, TypeScript, Vite,
-          TanStack Query, Tailwind CSS.
+          Client: Kotlin, Jetpack Compose, Retrofit. Backend: Kotlin, Spring Boot.
         </p>
       </section>
     </div>
