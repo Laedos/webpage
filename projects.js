@@ -50,4 +50,10 @@ const PROJECTS = [
     blurb: "Leases, rent, documents, and maintenance shared between landlords and tenants.",
     tags: ["Android", "Kotlin", "Next.js", "Spring Boot"],
   },
+  {
+    name: "ShiftLoop",
+    slug: "shiftloop",
+    blurb: "On-call rotation scheduling for dev teams, with shift swaps and a mobile companion.",
+    tags: ["Kotlin", "React", "React Native"],
+  },
 ];
