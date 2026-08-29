@@ -33,9 +33,9 @@ const PROJECTS = [
     tags: ["Kotlin", "React", "TypeScript"],
   },
   {
-    name: "PairProgrammer",
-    slug: "pairprogrammer",
-    blurb: "Rotation scheduling for pair-programming teams.",
+    name: "RotaHub",
+    slug: "rotahub",
+    blurb: "Modular rotation platform for dev teams — on-call paging and pair-programming scheduling.",
     tags: ["Kotlin", "React", "React Native"],
   },
   {
@@ -49,11 +49,5 @@ const PROJECTS = [
     slug: "tenanza",
     blurb: "Leases, rent, documents, and maintenance shared between landlords and tenants.",
     tags: ["Android", "Kotlin", "Next.js", "Spring Boot"],
-  },
-  {
-    name: "ShiftLoop",
-    slug: "shiftloop",
-    blurb: "On-call rotation scheduling for dev teams, with shift swaps and a mobile companion.",
-    tags: ["Kotlin", "React", "React Native"],
   },
 ];

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PairProgrammer — SB Dev Works</title>
-  <meta name="description" content="PairProgrammer: a rotation manager for pair-programming teams, on web and mobile." />
+  <title>RotaHub — SB Dev Works</title>
+  <meta name="description" content="RotaHub: a modular rotation platform for dev teams — on-call and pair-programming scheduling, on web and mobile." />
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
@@ -30,10 +30,11 @@
 
       <section class="detail-hero">
         <div class="status-pill">Core feature set complete</div>
-        <h1>PairProgrammer</h1>
+        <h1>RotaHub</h1>
         <p class="detail-tagline">
-          A pair-programming rotation manager: teams invite members, build skill/seniority
-          profiles, log sessions, and generate rotation schedules automatically.
+          A modular rotation platform for dev teams: one account, one set of teams, and
+          pluggable rotation modules — on-call paging and pair-programming scheduling — that a
+          team can turn on independently.
         </p>
         <div class="tags">
           <span class="tag">Kotlin</span>
@@ -47,22 +48,24 @@
       <section class="detail-section">
         <h2>Overview</h2>
         <p>
-          PairProgrammer generates fair pairing rotations for engineering teams using a
-          pluggable algorithm — least-recently-paired or skill-based — and tracks the resulting
-          history. It ships as a web app and a native mobile app sharing one backend and one
-          typed API client.
+          RotaHub replaces two earlier single-purpose apps — an on-call scheduler and a
+          pair-programming rotation manager — with one platform sharing a single account, team,
+          and billing core. Each team enables the rotation modules it actually needs, instead of
+          running two near-identical apps side by side. It ships as a web app and a native mobile
+          app sharing one backend and one typed API client.
         </p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Least-recently-paired and skill-based pairing algorithms, with fixed pairs and unavailability support</li>
-          <li>Team roles, member profiles (skills, seniority), and pairing history with CSV export</li>
-          <li>Recurring schedule automation and a pairing-coverage view for stale pairs/skills</li>
-          <li>Dashboard with upcoming sessions and pairing analytics</li>
-          <li>In-app and push notifications, light/dark theme, on both web and mobile</li>
-          <li>Production-ready Docker Compose stack with automatic HTTPS</li>
+          <li>On-Call module: round-robin and least-recently-on-call rotation algorithms, shift overrides with an audit trail, push notifications with escalation on missed acknowledgement</li>
+          <li>Pairing module: least-recently-paired and skill-based algorithms, fixed pairs, member skill/seniority profiles, pairing-coverage view for stale pairs/skills</li>
+          <li>Recurring schedule automation for both modules, with optional auto-publish</li>
+          <li>A unified "what's on my plate" dashboard federating upcoming shifts and sessions across every enabled module</li>
+          <li>In-app and push notifications, with per-type preferences</li>
+          <li>Light/dark theme, on both web and mobile</li>
+          <li>Full mobile parity: team management, on-call acknowledgement, and pairing roster/schedule/session administration, not just a read-only view</li>
         </ul>
       </section>
 
