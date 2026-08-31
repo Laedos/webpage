@@ -35,7 +35,7 @@ const PROJECTS = [
   {
     name: "RotaHub",
     slug: "rotahub",
-    blurb: "Modular rotation platform for dev teams — on-call paging and pair-programming scheduling.",
+    blurb: "Modular rotation platform for dev teams — on-call paging, pair-programming scheduling, code review rotation, and a Kanban board.",
     tags: ["Kotlin", "React", "React Native"],
   },
   {

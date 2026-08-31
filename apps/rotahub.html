@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RotaHub — SB Dev Works</title>
-  <meta name="description" content="RotaHub: a modular rotation platform for dev teams — on-call and pair-programming scheduling, on web and mobile." />
+  <meta name="description" content="RotaHub: a modular rotation platform for dev teams — on-call paging, pair-programming scheduling, code review rotation, and a Kanban board, on web and mobile." />
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
@@ -33,8 +33,8 @@
         <h1>RotaHub</h1>
         <p class="detail-tagline">
           A modular rotation platform for dev teams: one account, one set of teams, and
-          pluggable rotation modules — on-call paging and pair-programming scheduling — that a
-          team can turn on independently.
+          pluggable modules — on-call paging, pair-programming scheduling, code review rotation,
+          and a Kanban board — that a team can turn on independently.
         </p>
         <div class="tags">
           <span class="tag">Kotlin</span>
@@ -50,9 +50,10 @@
         <p>
           RotaHub replaces two earlier single-purpose apps — an on-call scheduler and a
           pair-programming rotation manager — with one platform sharing a single account, team,
-          and billing core. Each team enables the rotation modules it actually needs, instead of
-          running two near-identical apps side by side. It ships as a web app and a native mobile
-          app sharing one backend and one typed API client.
+          and billing core. Each team enables the modules it actually needs — On-Call, Pairing,
+          Code Review Rotation, and a free Kanban board — instead of running near-identical apps
+          side by side. It ships as a web app and a native mobile app sharing one backend and one
+          typed API client.
         </p>
       </section>
 
@@ -62,6 +63,8 @@
           <li>On-Call module: round-robin and least-recently-on-call rotation algorithms, shift overrides with an audit trail, push notifications with escalation on missed acknowledgement</li>
           <li>Pairing module: least-recently-paired and skill-based algorithms, fixed pairs, member skill/seniority profiles, pairing-coverage view for stale pairs/skills</li>
           <li>Recurring schedule automation for both modules, with optional auto-publish</li>
+          <li>Code Review Rotation module: round-robin/least-recently-reviewed reviewer suggestion, an opt-in GitHub webhook add-on that auto-suggests and requests the next reviewer when a PR opens</li>
+          <li>Kanban module: a free, always-on board per team with drag-and-drop reordering on web</li>
           <li>A unified "what's on my plate" dashboard federating upcoming shifts and sessions across every enabled module</li>
           <li>In-app and push notifications, with per-type preferences</li>
           <li>Light/dark theme, on both web and mobile</li>
