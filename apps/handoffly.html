@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RotaHub — SB Dev Works</title>
-  <meta name="description" content="RotaHub: a modular rotation platform for dev teams — on-call paging, pair-programming scheduling, code review rotation, and a Kanban board, on web and mobile." />
+  <title>Handoffly — SB Dev Works</title>
+  <meta name="description" content="Handoffly: a modular dev-team platform — on-call paging, pair-programming scheduling, code review rotation, standup rotation, incident tracking, a wiki, Kanban, and Slack notifications, on web and mobile." />
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
@@ -30,11 +30,12 @@
 
       <section class="detail-hero">
         <div class="status-pill">Core feature set complete</div>
-        <h1>RotaHub</h1>
+        <h1>Handoffly</h1>
         <p class="detail-tagline">
-          A modular rotation platform for dev teams: one account, one set of teams, and
-          pluggable modules — on-call paging, pair-programming scheduling, code review rotation,
-          and a Kanban board — that a team can turn on independently.
+          A modular dev-team platform: one account, one set of teams, and pluggable
+          modules — on-call paging, pair-programming scheduling, code review rotation,
+          standup rotation, incident tracking, a wiki, a Kanban board, and Slack
+          notifications — that a team can turn on independently.
         </p>
         <div class="tags">
           <span class="tag">Kotlin</span>
@@ -48,12 +49,12 @@
       <section class="detail-section">
         <h2>Overview</h2>
         <p>
-          RotaHub replaces two earlier single-purpose apps — an on-call scheduler and a
+          Handoffly replaces two earlier single-purpose apps — an on-call scheduler and a
           pair-programming rotation manager — with one platform sharing a single account, team,
           and billing core. Each team enables the modules it actually needs — On-Call, Pairing,
-          Code Review Rotation, and a free Kanban board — instead of running near-identical apps
-          side by side. It ships as a web app and a native mobile app sharing one backend and one
-          typed API client.
+          Code Review Rotation, Standup rotation, Incident Tracker, a Wiki, Slack notifications,
+          and a free Kanban board — instead of running near-identical apps side by side. It ships
+          as a web app and a native mobile app sharing one backend and one typed API client.
         </p>
       </section>
 
@@ -62,13 +63,17 @@
         <ul class="feature-list">
           <li>On-Call module: round-robin and least-recently-on-call rotation algorithms, shift overrides with an audit trail, push notifications with escalation on missed acknowledgement</li>
           <li>Pairing module: least-recently-paired and skill-based algorithms, fixed pairs, member skill/seniority profiles, pairing-coverage view for stale pairs/skills</li>
-          <li>Recurring schedule automation for both modules, with optional auto-publish</li>
+          <li>Standup module: calendar-generated weekday facilitator rotation, with manual per-day reassignment and optional auto-generation</li>
+          <li>Recurring schedule automation across the rotation modules, with optional auto-publish</li>
           <li>Code Review Rotation module: round-robin/least-recently-reviewed reviewer suggestion, an opt-in GitHub webhook add-on that auto-suggests and requests the next reviewer when a PR opens</li>
+          <li>Incident Tracker module: log incidents with severity/status/assignee and an action-items checklist, with an optional on-call schedule reference</li>
+          <li>Wiki module: per-team markdown pages with full, restorable edit history</li>
+          <li>Slack notification integration: posts team invites, published schedules, and recurrence failures to a team's Slack channel</li>
           <li>Kanban module: a free, always-on board per team with drag-and-drop reordering on web</li>
-          <li>A unified "what's on my plate" dashboard federating upcoming shifts and sessions across every enabled module</li>
+          <li>A unified "what's on my plate" dashboard federating upcoming shifts, sessions, cards, reviews, incidents, and standups across every enabled module</li>
           <li>In-app and push notifications, with per-type preferences</li>
           <li>Light/dark theme, on both web and mobile</li>
-          <li>Full mobile parity: team management, on-call acknowledgement, and pairing roster/schedule/session administration, not just a read-only view</li>
+          <li>Full mobile parity across every module: team management, on-call acknowledgement, pairing roster/schedule/session administration, and more, not just a read-only view</li>
         </ul>
       </section>
 

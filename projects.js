@@ -33,9 +33,9 @@ const PROJECTS = [
     tags: ["Kotlin", "React", "TypeScript"],
   },
   {
-    name: "RotaHub",
-    slug: "rotahub",
-    blurb: "Modular rotation platform for dev teams — on-call paging, pair-programming scheduling, code review rotation, and a Kanban board.",
+    name: "Handoffly",
+    slug: "handoffly",
+    blurb: "Modular dev-team platform — on-call paging, pairing, code review and standup rotation, incident tracking, a wiki, and Kanban.",
     tags: ["Kotlin", "React", "React Native"],
   },
   {
