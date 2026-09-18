@@ -53,7 +53,7 @@ const PROJECTS = [
   {
     name: "Arcade",
     slug: "arcade",
-    blurb: "Small browser games: Slingwell, Stacker, Mirror Snake, Lights Out, 2048, Brick Breaker, and Four in a Row for two.",
+    blurb: "Small browser games: seven to play now, and online party games (quiz, imposter, drawing telephone) in preview.",
     tags: ["TypeScript", "Canvas", "Web"],
   },
 ];
