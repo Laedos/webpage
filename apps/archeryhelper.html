@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ArcheryHelper — SB Dev Works</title>
-  <meta name="description" content="ArcheryHelper: an Android app for tracking archery equipment, sessions, and scores." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="ArcheryHelper: Everything an archer keeps track of, in one Android app: gear, practice, scores and tuning." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/archeryhelper.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="ArcheryHelper — SB Dev Works" />
+  <meta property="og:description" content="ArcheryHelper: Everything an archer keeps track of, in one Android app: gear, practice, scores and tuning." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/archeryhelper.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,48 +37,43 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">In active development</div>
+        <div class="status-pill dev">In development</div>
         <h1>ArcheryHelper</h1>
-        <p class="detail-tagline">
-          Personal archery equipment and session management for Android — bows, strings,
-          arrows, accessories, maintenance, sessions, and scoring, all in one place.
-        </p>
+        <p class="detail-tagline">Everything an archer keeps track of, in one Android app: gear, practice, scores and tuning.</p>
         <div class="tags">
           <span class="tag">Android</span>
           <span class="tag">Kotlin</span>
           <span class="tag">Jetpack Compose</span>
-          <span class="tag">Material 3</span>
+          <span class="tag">Ktor</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          ArcheryHelper is an offline-first Android app for archers to track their gear and
-          practice. It covers equipment (bows, strings, arrows, accessories) with maintenance
-          history, scored practice sessions, sight marks, tuning records, and a spine/ballistics
-          calculator — with optional multi-device sync for subscribers.
-        </p>
+        <p>ArcheryHelper keeps an archer’s equipment and practice in one place. Log bows, strings, arrows and accessories with their maintenance history, score practice sessions end by end, and keep sight marks and tuning notes to hand on the line.</p>
+        <p>It works fully offline, with optional sync across devices for subscribers.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Equipment tracking for bows, strings, arrows, and accessories with maintenance history</li>
-          <li>Session logging with per-end scoring and conditions (wind, temperature, indoor/outdoor)</li>
-          <li>Sight marks (distance &rarr; sight-setting lookup) and paper/bare-shaft/French tuning records</li>
-          <li>Arrow spine and ballistics calculator from draw weight, length, and point weight</li>
-          <li>Structured round formats — WA 720, Vegas 300, Indoor 18m — with personal-best tracking</li>
-          <li>Offline-first, with local zip backup/restore and optional multi-device sync</li>
+          <li>Equipment tracking for bows, strings, arrows and accessories, with maintenance history</li>
+          <li>Practice sessions scored end by end, with conditions (wind, temperature, indoor or outdoor)</li>
+          <li>Standard rounds (WA 720, Vegas 300, Indoor 18 m) with personal-best tracking</li>
+          <li>Sight marks: a distance-to-setting lookup for the field</li>
+          <li>Paper, bare-shaft and French tuning records</li>
+          <li>An arrow spine and ballistics calculator from draw weight, arrow length and point weight</li>
+          <li>Works offline, with zip backup and restore, plus optional multi-device sync</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          Kotlin, Jetpack Compose, Material 3, MVVM + Clean Architecture, Hilt, Room, DataStore,
-          Navigation Compose.
-        </p>
+        <dl class="built-with">
+          <div><dt>Android app</dt><dd>Kotlin, Jetpack Compose, Material 3, Hilt, Room, DataStore</dd></div>
+          <div><dt>Sync server</dt><dd>Kotlin, Ktor, Exposed, PostgreSQL</dd></div>
+          <div><dt>Architecture</dt><dd>Offline-first, MVVM with clean-architecture layers</dd></div>
+        </dl>
       </section>
     </div>
   </main>

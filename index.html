@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SB Dev Works</title>
-  <meta name="description" content="SB Dev Works — independent software developer building focused, useful apps." />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <meta name="description" content="I build small, focused apps for Android and the web, with the Kotlin backends behind them." />
+  <link rel="canonical" href="https://sbdevworks.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="SB Dev Works" />
+  <meta property="og:description" content="I build small, focused apps for Android and the web, with the Kotlin backends behind them." />
+  <meta property="og:url" content="https://sbdevworks.com/" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="assets/logo-64.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="#top" class="brand">
-        <img src="assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -27,10 +35,13 @@
   <main>
     <section id="top" class="hero">
       <div class="container">
-        <img src="assets/logo.png" alt="SB Dev Works logo" class="hero-logo" />
+        <img src="assets/logo-176.png" alt="" class="hero-logo" width="88" height="88" />
         <h1>SB Dev Works</h1>
-        <p class="hero-tagline">Independent developer building small, focused apps.</p>
-        <a class="button" href="https://github.com/Laedos" target="_blank" rel="noopener">View GitHub profile</a>
+        <p class="hero-tagline">I build small, focused apps for Android and the web, and the Kotlin backends behind them.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">See my projects</a>
+          <a class="button secondary" href="https://play.sbdevworks.com">Play Arcade</a>
+        </div>
       </div>
     </section>
 
@@ -41,15 +52,28 @@
       </div>
     </section>
 
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m an independent developer. I build Android apps in Kotlin and Jetpack Compose, web
+          apps in React and TypeScript, and the Kotlin and Ktor servers that sit behind them.
+        </p>
+        <p>
+          Every project here is built the same careful way: a clean, layered architecture,
+          automated tests for the rules that matter, and a CI pipeline with code-quality and
+          security checks on every change. The apps work offline where that makes sense and
+          stay simple to use.
+        </p>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
       <div class="container">
         <h2>Contact</h2>
         <p>
-          Email:
-          <a href="mailto:sbdevworks@proton.me">sbdevworks@proton.me</a>
-        </p>
-        <p>
-          <a href="https://github.com/Laedos" target="_blank" rel="noopener">github.com/Laedos</a>
+          Have an idea or a project in mind? Email me at
+          <a href="mailto:sbdevworks@proton.me">sbdevworks@proton.me</a>.
         </p>
       </div>
     </section>

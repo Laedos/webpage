@@ -5,6 +5,22 @@ for (const project of PROJECTS) {
   card.className = "project-card";
   card.href = `apps/${project.slug}.html`;
 
+  if (project.image) {
+    const thumb = document.createElement("img");
+    thumb.className = "project-thumb";
+    thumb.src = project.image;
+    thumb.alt = "";
+    thumb.loading = "lazy";
+    card.appendChild(thumb);
+  }
+
+  const body = document.createElement("div");
+  body.className = "project-body";
+
+  const status = document.createElement("span");
+  status.className = `status-pill ${project.statusClass}`;
+  status.textContent = project.status;
+
   const title = document.createElement("h3");
   title.textContent = project.name;
 
@@ -20,6 +36,7 @@ for (const project of PROJECTS) {
     tags.appendChild(tagEl);
   }
 
-  card.append(title, blurb, tags);
+  body.append(status, title, blurb, tags);
+  card.appendChild(body);
   grid.appendChild(card);
 }

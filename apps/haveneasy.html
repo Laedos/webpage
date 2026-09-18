@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HavenEasy — SB Dev Works</title>
-  <meta name="description" content="HavenEasy: an Android app for simple, shared home management." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="HavenEasy: One shared app for running a household: tasks, shopping, bills and chores, in sync for everyone at home." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/haveneasy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="HavenEasy — SB Dev Works" />
+  <meta property="og:description" content="HavenEasy: One shared app for running a household: tasks, shopping, bills and chores, in sync for everyone at home." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/haveneasy.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,12 +37,9 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">In active development</div>
+        <div class="status-pill dev">In development</div>
         <h1>HavenEasy</h1>
-        <p class="detail-tagline">
-          Simple home management for shared households — tasks, shopping, and bills, kept in
-          sync across everyone in the home.
-        </p>
+        <p class="detail-tagline">One shared app for running a household: tasks, shopping, bills and chores, in sync for everyone at home.</p>
         <div class="tags">
           <span class="tag">Android</span>
           <span class="tag">Kotlin</span>
@@ -45,28 +50,30 @@
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          HavenEasy is a Kotlin + Jetpack Compose Android client backed by a Ktor API,
-          built for households to coordinate day-to-day life together — chores, shopping lists,
-          and bills — with accounts and home invites so everyone stays on the same page.
-        </p>
+        <p>HavenEasy gives everyone in a home the same up-to-date picture: who’s doing which chore, what’s on the shopping list, and which bills are due. Invite housemates or family with a link, and a change made on one phone shows up on everyone’s.</p>
+        <p>It works offline too: edits are kept on the device and synced when you’re back online.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Shared households via deep-link invites</li>
-          <li>Task, shopping, and bills feature modules</li>
-          <li>Account system with email verification and password reset</li>
-          <li>Debug/release build separation with a configurable API endpoint</li>
+          <li>Shared homes: invite people with a link, and everyone sees the same lists</li>
+          <li>Tasks, chores and a cleaning rota, so housework gets shared out</li>
+          <li>Shopping lists and a home inventory</li>
+          <li>Bills and household documents in one place</li>
+          <li>A maintenance log and a shared calendar</li>
+          <li>Works offline: changes are saved on the device and synced when back online</li>
+          <li>Accounts with email verification and password reset</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          Client: Kotlin, Jetpack Compose, Retrofit. Backend: Kotlin, Ktor, Exposed, PostgreSQL.
-        </p>
+        <dl class="built-with">
+          <div><dt>Android app</dt><dd>Kotlin, Jetpack Compose, Hilt, Room, Retrofit, WorkManager</dd></div>
+          <div><dt>Server</dt><dd>Kotlin, Ktor, Exposed, PostgreSQL</dd></div>
+          <div><dt>Architecture</dt><dd>Offline-first, with an outbox queue that syncs changes in the background</dd></div>
+        </dl>
       </section>
     </div>
   </main>

@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PollDrop — SB Dev Works</title>
-  <meta name="description" content="PollDrop: a lightweight web app for creating and sharing anonymous polls." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="PollDrop: Create a poll in seconds and share the link. No account needed." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/polldrop.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="PollDrop — SB Dev Works" />
+  <meta property="og:description" content="PollDrop: Create a poll in seconds and share the link. No account needed." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/polldrop.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,48 +37,42 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">Feature complete</div>
+        <div class="status-pill built">Built, not yet released</div>
         <h1>PollDrop</h1>
-        <p class="detail-tagline">
-          A lightweight web app for creating and sharing polls — instant and anonymous, or
-          managed by a registered creator.
-        </p>
+        <p class="detail-tagline">Create a poll in seconds and share the link. No account needed.</p>
         <div class="tags">
-          <span class="tag">Kotlin</span>
-          <span class="tag">Ktor</span>
           <span class="tag">React</span>
           <span class="tag">TypeScript</span>
-          <span class="tag">PostgreSQL</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Ktor</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          PollDrop lets anyone spin up an anonymous poll in seconds with no account needed, while
-          registered creators get private polls with invites, full lifecycle management, and
-          configurable results visibility.
-        </p>
+        <p>PollDrop is for quick decisions: make an anonymous poll, share the link, and watch the results come in.</p>
+        <p>Registered creators get more control: private polls with invites, drafts, scheduled closing, and a choice of when voters get to see the results.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Anonymous polls — instant creation, no account, 90-day expiry</li>
-          <li>Poll templates for quick starts</li>
-          <li>Registered creators: private polls with invite links or email, draft/open/close/archive lifecycle</li>
-          <li>Scheduled auto-close and configurable results visibility (hidden, after vote, after close, or live)</li>
+          <li>Anonymous polls in seconds, with no account (they expire after 90 days)</li>
+          <li>Templates for common polls</li>
+          <li>Private polls, shared by invite link or email</li>
+          <li>Drafts, scheduled closing, and archive</li>
+          <li>Results shown live, after voting, after closing, or kept hidden</li>
           <li>Live results with CSV export</li>
-          <li>Anyone can report an abusive public poll; repeatedly reported polls are hidden pending review</li>
+          <li>Report button for abusive public polls; repeatedly reported polls are hidden until reviewed</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          Backend: Kotlin, Ktor, Exposed, Flyway, PostgreSQL. Frontend: React, TypeScript, Vite,
-          TanStack Query, Tailwind CSS.
-        </p>
+        <dl class="built-with">
+          <div><dt>Web app</dt><dd>React, TypeScript, Vite, TanStack Query, Tailwind CSS</dd></div>
+          <div><dt>Server</dt><dd>Kotlin, Ktor, Exposed, Flyway, PostgreSQL</dd></div>
+        </dl>
       </section>
     </div>
   </main>

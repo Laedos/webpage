@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>procrast.io — SB Dev Works</title>
-  <meta name="description" content="procrast.io: a JavaFX desktop focus timer and website blocker, with a sync backend and Android companion app." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="procrast.io: A focus timer for your desktop that also blocks distracting websites, with an Android companion app." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/procrastio.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="procrast.io — SB Dev Works" />
+  <meta property="og:description" content="procrast.io: A focus timer for your desktop that also blocks distracting websites, with an Android companion app." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/procrastio.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,45 +37,42 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">In active development</div>
+        <div class="status-pill dev">In development</div>
         <h1>procrast.io</h1>
-        <p class="detail-tagline">
-          A JavaFX desktop focus timer and website blocker, minimizing to the system tray, with a
-          sync backend and an Android companion app.
-        </p>
+        <p class="detail-tagline">A focus timer for your desktop that also blocks distracting websites, with an Android companion app.</p>
         <div class="tags">
           <span class="tag">Kotlin</span>
           <span class="tag">JavaFX</span>
           <span class="tag">Android</span>
+          <span class="tag">Ktor</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          procrast.io is a Kotlin + JavaFX desktop app for staying focused: a work/break focus-session
-          timer and a hosts-file website blocker, minimizing to the system tray and running in the
-          background. A Ktor sync backend and an Android companion app keep tasks, Kanban cards, and
-          inbox items in sync across devices, with a freemium Pro tier for multi-device sync.
-        </p>
+        <p>procrast.io helps you stay on task at your computer. Start a focus session, and the sites that eat your time stay blocked until the break.</p>
+        <p>It sits quietly in the system tray, and a companion Android app keeps your tasks and notes in sync across devices.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Focus-session timer with work/break phases</li>
-          <li>Website blocking via the system hosts file — paste any link, and the site's www and mobile addresses are blocked with it</li>
-          <li>Optional one-time setup to block and unblock without an admin prompt every session</li>
-          <li>System tray integration — minimizes instead of closing, with a Show/Close menu</li>
-          <li>Cross-device sync (desktop + Android) via a Ktor backend, free tier plus a Pro sync tier</li>
+          <li>Focus sessions with work and break phases</li>
+          <li>Website blocking: paste a link, and the site’s www and mobile addresses are blocked with it</li>
+          <li>A one-time setup, so blocking doesn’t ask for admin rights every session</li>
+          <li>Lives in the system tray: closing the window minimizes it instead of quitting</li>
+          <li>Tasks, Kanban cards and inbox notes, synced between desktop and Android</li>
+          <li>Free to use, with a Pro tier for multi-device sync</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          Kotlin, JavaFX, AtlantaFX, Ikonli, Gradle, Ktor (sync backend), Android/Compose (mobile companion).
-        </p>
+        <dl class="built-with">
+          <div><dt>Desktop app</dt><dd>Kotlin, JavaFX, AtlantaFX, Ikonli</dd></div>
+          <div><dt>Android app</dt><dd>Kotlin, Jetpack Compose</dd></div>
+          <div><dt>Sync server</dt><dd>Kotlin, Ktor</dd></div>
+        </dl>
       </section>
     </div>
   </main>

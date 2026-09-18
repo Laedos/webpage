@@ -1,6 +1,9 @@
+# IDE
+.idea/
+
 # OS
 .DS_Store
 Thumbs.db
 
-# IDE
-.idea/
+# Vite cache, if the site is ever served locally with Vite
+.vite/

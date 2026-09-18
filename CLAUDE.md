@@ -25,8 +25,8 @@ generated).
   and let `script.js` render it.
 - Every entry in `PROJECTS` needs a matching `apps/<slug>.html` (the card links to
   `apps/${slug}.html` unconditionally) — adding one without the other leaves a dead link.
-- `apps/*.html` pages are static copies of each other's structure (title, tagline, overview,
-  features, "Built with") — when changing that structure, update the existing pages too so they
+- `apps/*.html` pages are static copies of each other's structure (status, title, tagline, tags,
+  screenshots, overview, features, "Built with") — when changing that structure, update the existing pages too so they
   stay consistent, don't let them drift into different layouts.
 - `styles.css` is shared by every page (homepage + all `apps/*.html`) — a class added for one page
   is available everywhere; check other pages aren't affected before renaming/removing a class.
@@ -41,3 +41,20 @@ grid renders — still read the existing pattern first and follow it rather than
 
 No automated tests exist and none are planned (static content, nothing to unit-test) — see
 [QA.md](QA.md) for the manual pre-publish checklist instead.
+
+## Content conventions (set 2026-09-18)
+
+- **Voice:** first person singular. It's one developer's portfolio ("I build…"), never "we".
+- **Status:** exactly one of three labels, identical on the card and the detail page: `Live`
+  (someone can use it right now, with a link), `Built, not yet released`, or `In development`.
+  Each has its own pill colour (`.status-pill.live` / `.built` / `.dev`).
+- **Copy:** lead with what the product does for people; engineering detail belongs in "Built with"
+  and the About section. Features are 6–8 short bullets, written for a user.
+- **Tags:** at most four, the same list and order on the card and the detail page. Use the full
+  names: `Jetpack Compose`, not `Compose`; `PostgreSQL`, not `Postgres`.
+- **"Built with"** is a `<dl class="built-with">` with one row per part (Android app, Web app,
+  Mobile app, Desktop app, Server or Sync server, Architecture), and names every part the
+  features rely on. A sync feature means the sync server is listed.
+- **Screenshots** live in `assets/shots/<slug>-N.png`. The first one is also the card thumbnail and
+  the page's `og:image`. Every image has real alt text.
+- **No GitHub link.** The repos are private, so the profile shows almost nothing.

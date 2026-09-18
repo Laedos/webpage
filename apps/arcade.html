@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arcade — SB Dev Works</title>
-  <meta name="description" content="Arcade: small browser games: Slingwell, Stacker, Mirror Snake, Lights Out, 2048, Brick Breaker and Four in a Row." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="Arcade: Small games that run in the browser: no installs, no accounts. Pick one and play." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/arcade.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="Arcade — SB Dev Works" />
+  <meta property="og:description" content="Arcade: Small games that run in the browser: no installs, no accounts. Pick one and play." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/arcade.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,53 +37,44 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">Live</div>
+        <div class="status-pill live">Live</div>
         <h1>Arcade</h1>
-        <p class="detail-tagline">
-          Small games that run in the browser: no installs, no accounts. Pick one from the menu
-          and play.
-        </p>
+        <p class="detail-tagline">Small games that run in the browser: no installs, no accounts. Pick one and play.</p>
         <div class="tags">
           <span class="tag">TypeScript</span>
-          <span class="tag">Canvas</span>
           <span class="tag">Vite</span>
-          <span class="tag">Web</span>
+          <span class="tag">Canvas</span>
+          <span class="tag">Cloudflare</span>
         </div>
-        <p>
-          <a class="button" href="https://play.sbdevworks.com" target="_blank" rel="noopener">Play now</a>
-        </p>
+        <p class="detail-cta"><a class="button" href="https://play.sbdevworks.com">Play now</a></p>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          Arcade is a collection of quick browser games at play.sbdevworks.com: seven so far, each
-          one learnable in seconds, and each with its own twist on a classic.
-        </p>
+        <p>Arcade is a growing collection of quick browser games at play.sbdevworks.com. Each one is learnable in seconds and puts its own twist on a classic, and they all work on a phone as well as a desktop.</p>
+        <p>Online party games are in preview: every screen is built and can be clicked through, while the room server gets ready to go live.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Slingwell: circle a planet and let go at the right moment to catch the next orbit; skip planets for bonus points</li>
-          <li>Stacker: drop the sliding block; the overhang is cut off, and perfect drops earn width back</li>
-          <li>Mirror Snake: classic snake, but every fourth apple flips your controls for six seconds</li>
-          <li>Lights Out: the 5x5 light-flipping puzzle, level after level, always solvable</li>
-          <li>2048: slide and merge tiles to reach 2048</li>
-          <li>Brick Breaker: aim the ball off your paddle to clear every brick, level after level</li>
-          <li>Four in a Row: two players on one screen, taking turns to line up four</li>
-          <li>Online party games in preview: Doodle Telephone, Quiz Night, Imposter and Rock Paper Scissors, with every screen ready to click through while online rooms get set up</li>
-          <li>Best scores saved in your browser</li>
-          <li>Works on phone and desktop, with nothing to install and no account</li>
+          <li>Slingwell: circle a planet and let go at the right moment to catch the next orbit</li>
+          <li>Stacker, Mirror Snake, 2048 and Brick Breaker: classics with a twist, each with a saved best score</li>
+          <li>Lights Out: the 5×5 light-flipping puzzle, level after level, always solvable</li>
+          <li>Four in a Row: two players on one screen</li>
+          <li>Online in preview: Doodle Telephone, Quiz Night, Imposter and Rock Paper Scissors, played with a room code</li>
+          <li>Keyboard controls on desktop, touch controls on phones</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          TypeScript, Vite, the Canvas 2D API and plain DOM, with no framework and no backend. Game rules are
-          kept separate from rendering and are unit-tested with Vitest. Hosted on GitHub Pages.
-        </p>
+        <dl class="built-with">
+          <div><dt>Games</dt><dd>TypeScript, Vite, Canvas 2D and plain DOM, no framework</dd></div>
+          <div><dt>Online rooms</dt><dd>Cloudflare Workers with Durable Objects (in preview)</dd></div>
+          <div><dt>Quality</dt><dd>Game rules kept apart from rendering and unit-tested with Vitest</dd></div>
+          <div><dt>Hosting</dt><dd>GitHub Pages</dd></div>
+        </dl>
       </section>
     </div>
   </main>

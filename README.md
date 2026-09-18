@@ -1,6 +1,6 @@
 # SB Dev Works
 
-Personal developer landing page: a logo, a short intro, a projects grid, and a contact
+Personal developer portfolio: a short intro, a projects grid, an About section, and a contact
 section. Plain HTML/CSS/JS — no build step, no dependencies, no framework.
 
 ## Structure
@@ -11,7 +11,8 @@ styles.css    all styling (shared by the homepage and app detail pages)
 projects.js   portfolio data (edit this to add/remove projects)
 script.js     renders the project cards on the homepage
 year.js       footer year, shared by every page
-assets/       logo.png (SB Dev Works logo)
+assets/       logo.png (source), logo-64.png / logo-176.png (sizes the pages use),
+              social.png (link-preview image), shots/<slug>-N.png (project screenshots)
 apps/         one detail page per project (apps/<slug>.html)
 ```
 
@@ -22,14 +23,18 @@ apps/         one detail page per project (apps/<slug>.html)
    ```js
    {
      name: "MyNewApp",
-     slug: "my-new-app",       // used for apps/my-new-app.html
-     blurb: "One sentence about what it does.",
-     tags: ["Android", "Kotlin"],
+     slug: "my-new-app",                      // apps/my-new-app.html, assets/shots/my-new-app-N.png
+     status: "In development",                // "Live", "Built, not yet released" or "In development"
+     statusClass: "dev",                      // live, built or dev, matching the status
+     blurb: "One sentence about what it does for people.",
+     tags: ["Android", "Kotlin"],             // the same tags as the detail page, same order
+     image: "assets/shots/my-new-app-1.png",  // card thumbnail, or null
    },
    ```
 
-2. Copy an existing file in `apps/` to `apps/<slug>.html` and edit the title, tagline,
-   overview, features, and "Built with" sections.
+2. Copy an existing file in `apps/` to `apps/<slug>.html` and edit the status, title, tagline,
+   tags, screenshots, overview, features, and "Built with" sections. Point its Open Graph tags at
+   the new page and its first screenshot. See CLAUDE.md's "Content conventions" for the rules.
 
 The homepage card is generated automatically from `projects.js` and links to
 `apps/<slug>.html`.

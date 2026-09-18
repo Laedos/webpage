@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Odomo — SB Dev Works</title>
-  <meta name="description" content="Odomo: an Android app for vehicle maintenance, expenses, and documents." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="Odomo: Every vehicle’s maintenance, costs and paperwork in one Android app." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/odomo.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="Odomo — SB Dev Works" />
+  <meta property="og:description" content="Odomo: Every vehicle’s maintenance, costs and paperwork in one Android app." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/odomo.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,49 +37,44 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">Feature complete</div>
+        <div class="status-pill built">Built, not yet released</div>
         <h1>Odomo</h1>
-        <p class="detail-tagline">
-          Personal garage management for Android — vehicles, maintenance, expenses, repairs,
-          budgets, road trips, documents, and fuel tracking.
-        </p>
+        <p class="detail-tagline">Every vehicle’s maintenance, costs and paperwork in one Android app.</p>
         <div class="tags">
           <span class="tag">Android</span>
           <span class="tag">Kotlin</span>
           <span class="tag">Jetpack Compose</span>
-          <span class="tag">Material 3</span>
+          <span class="tag">Ktor</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          Odomo keeps every vehicle's maintenance, expenses, repairs, and paperwork in one
-          offline-first app, with optional multi-device sync for subscribers. It shares its
-          architecture and engineering conventions with ArcheryHelper, and adds budgets, road
-          trips, and fuel logging on top of the same equipment-tracking foundation.
-        </p>
+        <p>Odomo keeps track of what your cars cost and what they need. Log maintenance, repairs, fuel and expenses per vehicle, set budgets, record road trips, and get reminded before documents expire.</p>
+        <p>It works fully offline, with optional sync across devices for subscribers.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Vehicle profiles with maintenance, expense, and planned-repair tracking</li>
-          <li>Budgets with progress tracking, and road trips with mileage and photos</li>
-          <li>Documents with issue/expiry dates and reminders for what's due</li>
-          <li>Statistics: spending breakdown and per-vehicle summaries</li>
-          <li>Quick Add bottom sheet for fast logging of expenses, maintenance, or fuel</li>
-          <li>Fuel log with consumption and cost-per-distance tracking</li>
-          <li>Offline-first, with full backup/export to a zip file and optional multi-device sync</li>
+          <li>Vehicle profiles with maintenance, expense and planned-repair tracking</li>
+          <li>A fuel log with consumption and cost per distance</li>
+          <li>Budgets with progress tracking</li>
+          <li>Road trips with mileage and photos</li>
+          <li>Documents with issue and expiry dates, and reminders before they’re due</li>
+          <li>Statistics: spending breakdowns and per-vehicle summaries</li>
+          <li>Quick Add, for logging an expense, service or fill-up in seconds</li>
+          <li>Works offline, with zip backup and export, plus optional multi-device sync</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          Kotlin, Jetpack Compose, Material 3, MVVM + Clean Architecture, Hilt, Room, DataStore,
-          Navigation Compose.
-        </p>
+        <dl class="built-with">
+          <div><dt>Android app</dt><dd>Kotlin, Jetpack Compose, Material 3, Hilt, Room, DataStore</dd></div>
+          <div><dt>Sync server</dt><dd>Kotlin, Ktor, Exposed, PostgreSQL</dd></div>
+          <div><dt>Architecture</dt><dd>Offline-first, MVVM with clean-architecture layers</dd></div>
+        </dl>
       </section>
     </div>
   </main>

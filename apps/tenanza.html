@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tenanza — SB Dev Works</title>
-  <meta name="description" content="Tenanza: leases, rent, documents, and maintenance shared between landlords and tenants." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="Tenanza: One shared place for landlords and tenants: leases, rent, documents and maintenance." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/tenanza.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="Tenanza — SB Dev Works" />
+  <meta property="og:description" content="Tenanza: One shared place for landlords and tenants: leases, rent, documents and maintenance." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/tenanza.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,51 +37,43 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">Feature complete</div>
+        <div class="status-pill built">Built, not yet released</div>
         <h1>Tenanza</h1>
-        <p class="detail-tagline">
-          One shared place for landlords and tenants to manage leases, rent, documents, and
-          maintenance — Android app and web app, backed by the same API.
-        </p>
+        <p class="detail-tagline">One shared place for landlords and tenants: leases, rent, documents and maintenance.</p>
         <div class="tags">
           <span class="tag">Android</span>
-          <span class="tag">Kotlin</span>
-          <span class="tag">Jetpack Compose</span>
           <span class="tag">Next.js</span>
+          <span class="tag">Kotlin</span>
           <span class="tag">Ktor</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          Tenanza is a property-management app for landlords and tenants, built as a Kotlin +
-          Jetpack Compose Android client and a Next.js web client, both backed by the same
-          Ktor API. Lease onboarding runs on invite links rather than requiring a tenant
-          to already have an account, and every core workflow — rent, documents, maintenance —
-          is shared between both sides of the lease instead of siloed to one app or the other.
-        </p>
+        <p>Tenanza puts both sides of a rental on the same page. A landlord invites a tenant to a lease with a link, and from then on rent statements, documents, meter readings and maintenance requests live in one shared place instead of email threads.</p>
+        <p>It comes as an Android app and a web app, both on the same account.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>Invite-based lease onboarding, no account required to receive an invite</li>
-          <li>Monthly billing statements with itemized line items</li>
-          <li>Document vault for leases, IDs, receipts, and property files</li>
-          <li>Maintenance requests, per-unit meter readings, move-in/move-out handover records
-            with PDF export</li>
-          <li>Each lease keeps its own currency; reports and tax exports total per currency</li>
-          <li>Web client localized in English, Polish, German, and Ukrainian</li>
+          <li>Invite a tenant to a lease with a link; they don’t need an account first</li>
+          <li>Monthly rent statements with itemized charges, automatic reminders and late fees</li>
+          <li>A shared document vault for leases, IDs, receipts and property files</li>
+          <li>Maintenance requests from tenants, tracked through to done</li>
+          <li>Meter readings and move-in/move-out handover records, with PDF export</li>
+          <li>Leases in different currencies, with per-currency reports and tax exports</li>
+          <li>Web app in English, Polish, German and Ukrainian</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          Android: Kotlin, Jetpack Compose, Retrofit. Web: Next.js, TypeScript. Backend: Kotlin,
-          Ktor, Exposed, Postgres.
-        </p>
+        <dl class="built-with">
+          <div><dt>Android app</dt><dd>Kotlin, Jetpack Compose, Retrofit</dd></div>
+          <div><dt>Web app</dt><dd>Next.js, TypeScript</dd></div>
+          <div><dt>Server</dt><dd>Kotlin, Ktor, Exposed, PostgreSQL</dd></div>
+        </dl>
       </section>
     </div>
   </main>

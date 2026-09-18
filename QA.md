@@ -9,8 +9,10 @@ from. No automated tests exist for this site — see [CLAUDE.md](CLAUDE.md) for 
 
 - [ ] `index.html`'s contact section still links `mailto:sbdevworks@proton.me` (the default
       contact address across every project under `C:\Dev`), not a placeholder.
-- [ ] The GitHub link (`https://github.com/Laedos`) still points at the right profile.
-- [ ] Every entry in `projects.js` reflects the current state of that project (name, blurb, tags) —
+- [ ] No link to the GitHub profile: every project repo except Arcade and this site is private,
+      so the profile shows almost nothing (removed 2026-09-18).
+- [ ] Every entry in `projects.js` reflects the current state of that project (name, status, blurb,
+      tags) and matches its detail page: same status label, same tags in the same order —
       cross-check against the project's own README.
 
 ## 2. Every project card works
@@ -39,8 +41,8 @@ python3 -m http.server 8000
 # visit http://localhost:8000
 ```
 
-- [ ] Click through every nav link, every project card, and the "View GitHub profile" / GitHub
-      profile links from the local server — no console errors in devtools.
+- [ ] Click through every nav link, every project card, and the hero buttons from the local
+      server — no console errors in devtools.
 
 ## 5. After publishing
 

@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Handoffly — SB Dev Works</title>
-  <meta name="description" content="Handoffly: a modular dev-team platform — on-call paging, pair-programming scheduling, code review rotation, standup rotation, incident tracking, a wiki, Kanban, and Slack notifications, on web and mobile." />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <meta name="description" content="Handoffly: One place for the rotations and routines a dev team runs every week: on-call, pairing, code review, standups and more." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/handoffly.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="Handoffly — SB Dev Works" />
+  <meta property="og:description" content="Handoffly: One place for the rotations and routines a dev team runs every week: on-call, pairing, code review, standups and more." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/handoffly.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -13,13 +21,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="../index.html" class="brand">
-        <img src="../assets/logo.png" alt="SB Dev Works logo" class="brand-logo" />
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
         <span class="brand-name">SB Dev Works</span>
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main">
         <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
         <a href="../index.html#contact">Contact</a>
-        <a href="https://github.com/Laedos" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
@@ -29,60 +37,44 @@
       <a href="../index.html#projects" class="back-link">&larr; All projects</a>
 
       <section class="detail-hero">
-        <div class="status-pill">Feature complete</div>
+        <div class="status-pill built">Built, not yet released</div>
         <h1>Handoffly</h1>
-        <p class="detail-tagline">
-          A modular dev-team platform: one account, one set of teams, and pluggable
-          modules — on-call paging, pair-programming scheduling, code review rotation,
-          standup rotation, incident tracking, a wiki, a Kanban board, and Slack
-          notifications — that a team can turn on independently.
-        </p>
+        <p class="detail-tagline">One place for the rotations and routines a dev team runs every week: on-call, pairing, code review, standups and more.</p>
         <div class="tags">
           <span class="tag">Kotlin</span>
           <span class="tag">Ktor</span>
           <span class="tag">React</span>
           <span class="tag">React Native</span>
-          <span class="tag">TypeScript</span>
         </div>
       </section>
 
       <section class="detail-section">
         <h2>Overview</h2>
-        <p>
-          Handoffly replaces two earlier single-purpose apps — an on-call scheduler and a
-          pair-programming rotation manager — with one platform sharing a single account, team,
-          and billing core. Each team enables the modules it actually needs — On-Call, Pairing,
-          Code Review Rotation, Standup rotation, Incident Tracker, a Wiki, Slack notifications,
-          and a free Kanban board — instead of running near-identical apps side by side. It ships
-          as a web app and a native mobile app sharing one backend and one typed API client.
-        </p>
+        <p>Handoffly gives a development team one home for the jobs that usually live in spreadsheets and chat threads: who’s on call, who pairs with whom, who reviews the next pull request, and who runs standup.</p>
+        <p>Teams switch on only the modules they need, and everyone sees what’s on their plate across all of them, on the web or in the mobile app.</p>
       </section>
 
       <section class="detail-section">
         <h2>Key features</h2>
         <ul class="feature-list">
-          <li>On-Call module: round-robin and least-recently-on-call rotation algorithms, shift overrides with an audit trail, push notifications with escalation on missed acknowledgement</li>
-          <li>Pairing module: least-recently-paired and skill-based algorithms, fixed pairs, member skill/seniority profiles, pairing-coverage view for stale pairs/skills</li>
-          <li>Standup module: calendar-generated weekday facilitator rotation, with manual per-day reassignment and optional auto-generation</li>
-          <li>Recurring schedule automation across the rotation modules, with optional auto-publish</li>
-          <li>Code Review Rotation module: round-robin/least-recently-reviewed reviewer suggestion, an opt-in GitHub webhook add-on that auto-suggests and requests the next reviewer when a PR opens</li>
-          <li>Incident Tracker module: log incidents with severity/status/assignee and an action-items checklist, with an optional on-call schedule reference</li>
-          <li>Wiki module: per-team markdown pages with full, restorable edit history</li>
-          <li>Slack notification integration: posts team invites, published schedules, and recurrence failures to a team's Slack channel</li>
-          <li>Kanban module: a free, always-on board per team with drag-and-drop reordering on web</li>
-          <li>A unified "what's on my plate" dashboard federating upcoming shifts, sessions, cards, reviews, incidents, and standups across every enabled module</li>
-          <li>In-app and push notifications, with per-type preferences</li>
-          <li>Light/dark theme, on both web and mobile</li>
-          <li>Full mobile parity across every module: team management, on-call acknowledgement, pairing roster/schedule/session administration, and more, not just a read-only view</li>
+          <li>On-call rotations with shift swaps, push notifications, and escalation when a page isn’t acknowledged</li>
+          <li>Pair-programming schedules that rotate partners and balance skills across the team</li>
+          <li>Code review rotation, with an optional GitHub integration that assigns the next reviewer when a pull request opens</li>
+          <li>Standup facilitator rotation</li>
+          <li>Shared time off: mark yourself away once, and every rotation skips you</li>
+          <li>An incident tracker with action items, a team wiki with page history, and a Kanban board</li>
+          <li>A “what’s on my plate” dashboard across every module, with push and Slack notifications</li>
+          <li>A full mobile app, not a read-only companion, with light and dark themes</li>
         </ul>
       </section>
 
       <section class="detail-section">
         <h2>Built with</h2>
-        <p>
-          Backend: Kotlin, Ktor, Koin, Exposed, Flyway, SQLite/PostgreSQL. Web: React, TypeScript,
-          Vite. Mobile: React Native (Expo).
-        </p>
+        <dl class="built-with">
+          <div><dt>Web app</dt><dd>React, TypeScript, Vite</dd></div>
+          <div><dt>Mobile app</dt><dd>React Native (Expo)</dd></div>
+          <div><dt>Server</dt><dd>Kotlin, Ktor, Koin, Exposed, Flyway, PostgreSQL</dd></div>
+        </dl>
       </section>
     </div>
   </main>
