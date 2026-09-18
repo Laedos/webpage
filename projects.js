@@ -50,4 +50,10 @@ const PROJECTS = [
     blurb: "Leases, rent, documents, and maintenance shared between landlords and tenants.",
     tags: ["Android", "Kotlin", "Next.js", "Ktor"],
   },
+  {
+    name: "Arcade",
+    slug: "arcade",
+    blurb: "Small browser games: Slingwell, Stacker, Mirror Snake, Lights Out, and Four in a Row for two.",
+    tags: ["TypeScript", "Canvas", "Web"],
+  },
 ];

@@ -3,13 +3,15 @@
 ## Status
 
 Static site, no build step, working and green in CI. `projects.js` (the cross-project sync file)
-is current — all 7 real projects under `C:\Dev` are listed (ArcheryHelper, Odomo, HavenEasy,
-PollDrop, Handoffly, procrast.io, Tenanza), nothing missing or stale. Updated 2026-08-29: the
+is current — all 8 real projects under `C:\Dev` are listed (ArcheryHelper, Odomo, HavenEasy,
+PollDrop, Handoffly, procrast.io, Tenanza, Arcade), nothing missing or stale. Updated 2026-08-29: the
 PairProgrammer and ShiftLoop entries were replaced by a single RotaHub entry now that both source
 apps have been retired (merged into RotaHub, archived on GitHub) — `apps/pairprogrammer.html` and
 `apps/shiftloop.html` removed, `apps/rotahub.html` added. Updated 2026-09-02: RotaHub renamed to
 Handoffly (the app outgrew "rotation hub" — it's a general dev-team platform now) —
 `apps/rotahub.html` renamed to `apps/handoffly.html`, `projects.js` entry updated to match.
+Updated 2026-09-18: Arcade added (`apps/arcade.html`), the first page with a "Live" status pill
+and a "Play now" link, since it really is deployed (play.sbdevworks.com).
 
 ## Next steps
 
