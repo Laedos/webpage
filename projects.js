@@ -23,8 +23,8 @@ const PROJECTS = [
   {
     name: "Handoffly",
     slug: "handoffly",
-    status: "Built, not yet released",
-    statusClass: "built",
+    status: "In development",
+    statusClass: "dev",
     blurb: "One platform for a dev team’s weekly rotations: on-call, pairing, code review, standups and more.",
     tags: ["Kotlin","Ktor","React","React Native"],
     image: "assets/shots/handoffly-1.jpg",
@@ -43,8 +43,8 @@ const PROJECTS = [
   {
     name: "Odomo",
     slug: "odomo",
-    status: "Built, not yet released",
-    statusClass: "built",
+    status: "In development",
+    statusClass: "dev",
     blurb: "Maintenance, costs and paperwork for every vehicle you own.",
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
     image: "assets/shots/odomo-1.png",
