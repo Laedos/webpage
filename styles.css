@@ -378,6 +378,11 @@ a.project-card:hover {
   background: var(--bg);
 }
 
+/* A phone screenshot's top is the status bar, so crop it just below the screen's header instead. */
+.project-thumb-tall {
+  object-position: center 22%;
+}
+
 .project-body {
   display: flex;
   flex: 1;

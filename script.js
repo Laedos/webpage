@@ -7,7 +7,7 @@ for (const project of PROJECTS) {
 
   if (project.image) {
     const thumb = document.createElement("img");
-    thumb.className = "project-thumb";
+    thumb.className = project.imageTall ? "project-thumb project-thumb-tall" : "project-thumb";
     thumb.src = project.image;
     thumb.alt = "";
     thumb.loading = "lazy";

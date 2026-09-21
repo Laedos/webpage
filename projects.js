@@ -8,6 +8,7 @@
 // blurb:       one sentence, what it does for people
 // tags:        the same tags as the detail page, in the same order
 // image:       the card thumbnail, the project's first screenshot (or null)
+// imageTall:   true for a phone screenshot, so the card crops it from the middle
 const PROJECTS = [
   {
     name: "Arcade",
@@ -16,7 +17,8 @@ const PROJECTS = [
     statusClass: "live",
     blurb: "Small browser games: seven to play right now, and online party games in preview.",
     tags: ["TypeScript","Vite","Canvas","Cloudflare"],
-    image: null,
+    image: "assets/shots/arcade-1.jpg",
+    imageTall: false,
   },
   {
     name: "Handoffly",
@@ -25,7 +27,8 @@ const PROJECTS = [
     statusClass: "built",
     blurb: "One platform for a dev team’s weekly rotations: on-call, pairing, code review, standups and more.",
     tags: ["Kotlin","Ktor","React","React Native"],
-    image: null,
+    image: "assets/shots/handoffly-1.jpg",
+    imageTall: false,
   },
   {
     name: "Tenanza",
@@ -34,7 +37,8 @@ const PROJECTS = [
     statusClass: "built",
     blurb: "Leases, rent, documents and maintenance, shared between landlords and tenants.",
     tags: ["Android","Next.js","Kotlin","Ktor"],
-    image: null,
+    image: "assets/shots/tenanza-1.jpg",
+    imageTall: false,
   },
   {
     name: "Odomo",
@@ -43,7 +47,8 @@ const PROJECTS = [
     statusClass: "built",
     blurb: "Maintenance, costs and paperwork for every vehicle you own.",
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
-    image: null,
+    image: "assets/shots/odomo-1.png",
+    imageTall: true,
   },
   {
     name: "ArcheryHelper",
@@ -52,7 +57,8 @@ const PROJECTS = [
     statusClass: "dev",
     blurb: "Gear, practice sessions, scores and tuning for archers, in one Android app.",
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
-    image: null,
+    image: "assets/shots/archeryhelper-1.png",
+    imageTall: true,
   },
   {
     name: "HavenEasy",
@@ -61,7 +67,8 @@ const PROJECTS = [
     statusClass: "dev",
     blurb: "Tasks, shopping, bills and chores for a shared household, in sync for everyone at home.",
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
-    image: null,
+    image: "assets/shots/haveneasy-1.png",
+    imageTall: true,
   },
   {
     name: "PollDrop",
@@ -70,7 +77,8 @@ const PROJECTS = [
     statusClass: "built",
     blurb: "Create a poll in seconds and share the link. No account needed.",
     tags: ["React","TypeScript","Kotlin","Ktor"],
-    image: null,
+    image: "assets/shots/polldrop-1.jpg",
+    imageTall: false,
   },
   {
     name: "procrast.io",
@@ -79,6 +87,7 @@ const PROJECTS = [
     statusClass: "dev",
     blurb: "A desktop focus timer that blocks distracting websites, with an Android companion.",
     tags: ["Kotlin","JavaFX","Android","Ktor"],
-    image: null,
+    image: "assets/shots/procrastio-1.png",
+    imageTall: true,
   },
 ];
