@@ -31,13 +31,13 @@ const PROJECTS = [
     imageTall: false,
   },
   {
-    name: "Tenanza",
-    slug: "tenanza",
+    name: "Doorwell",
+    slug: "doorwell",
     status: "Built, not yet released",
     statusClass: "built",
     blurb: "Leases, rent, documents and maintenance, shared between landlords and tenants.",
     tags: ["Android","Next.js","Kotlin","Ktor"],
-    image: "assets/shots/tenanza-1.jpg",
+    image: "assets/shots/doorwell-1.jpg",
     imageTall: false,
   },
   {
