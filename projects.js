@@ -25,7 +25,7 @@ const PROJECTS = [
     slug: "handoffly",
     status: "In development",
     statusClass: "dev",
-    blurb: "One platform for a dev team’s weekly rotations: on-call, pairing, code review, standups and more.",
+    blurb: "Everything a dev team runs around its code, in one place: on-call, code review, standups, incidents, Kanban and a wiki.",
     tags: ["Kotlin","Ktor","React","React Native"],
     image: "assets/shots/handoffly-1.jpg",
     imageTall: false,
