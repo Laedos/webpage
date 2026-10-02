@@ -4,7 +4,9 @@
 //
 // name:        project name
 // slug:        detail page filename (apps/<slug>.html) and screenshot prefix (assets/shots/<slug>-N.png)
-// status:      one of "Live", "Built, not yet released", "In development" (statusClass matches it)
+// status:      one of "Live", "Built, not yet released", "In development" (statusClass matches it).
+//              The grid shows them in that order (script.js sorts by status); within one status, in
+//              the order listed here.
 // blurb:       one sentence, what it does for people
 // tags:        the same tags as the detail page, in the same order
 // image:       the card thumbnail, the project's first screenshot (or null)
@@ -21,16 +23,6 @@ const PROJECTS = [
     imageTall: false,
   },
   {
-    name: "Handoffly",
-    slug: "handoffly",
-    status: "In development",
-    statusClass: "dev",
-    blurb: "Everything a dev team runs around its code, in one place: on-call, code review, standups, incidents, Kanban and a wiki.",
-    tags: ["Kotlin","Ktor","React","React Native"],
-    image: "assets/shots/handoffly-1.jpg",
-    imageTall: false,
-  },
-  {
     name: "Doorwell",
     slug: "doorwell",
     status: "Built, not yet released",
@@ -38,6 +30,36 @@ const PROJECTS = [
     blurb: "Leases, rent, documents and maintenance, shared between landlords and tenants.",
     tags: ["Android","Next.js","Kotlin","Ktor"],
     image: "assets/shots/doorwell-1.jpg",
+    imageTall: false,
+  },
+  {
+    name: "PollDrop",
+    slug: "polldrop",
+    status: "Built, not yet released",
+    statusClass: "built",
+    blurb: "Create a poll in seconds and share the link. No account needed.",
+    tags: ["React","TypeScript","Kotlin","Ktor"],
+    image: "assets/shots/polldrop-1.jpg",
+    imageTall: false,
+  },
+  {
+    name: "Dzieńki",
+    slug: "dzienki",
+    status: "Built, not yet released",
+    statusClass: "built",
+    blurb: "A preschool's day in parents' pockets: meals, naps, messages, absences and who is picking up.",
+    tags: ["React Native","Expo","Kotlin","Ktor"],
+    image: "assets/shots/dzienki-1.png",
+    imageTall: true,
+  },
+  {
+    name: "Handoffly",
+    slug: "handoffly",
+    status: "In development",
+    statusClass: "dev",
+    blurb: "Everything a dev team runs around its code, in one place: on-call, code review, standups, incidents, Kanban and a wiki.",
+    tags: ["Kotlin","Ktor","React","React Native"],
+    image: "assets/shots/handoffly-1.jpg",
     imageTall: false,
   },
   {
@@ -69,16 +91,6 @@ const PROJECTS = [
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
     image: "assets/shots/haveneasy-1.png",
     imageTall: true,
-  },
-  {
-    name: "PollDrop",
-    slug: "polldrop",
-    status: "Built, not yet released",
-    statusClass: "built",
-    blurb: "Create a poll in seconds and share the link. No account needed.",
-    tags: ["React","TypeScript","Kotlin","Ktor"],
-    image: "assets/shots/polldrop-1.jpg",
-    imageTall: false,
   },
   {
     name: "procrast.io",

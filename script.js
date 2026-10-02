@@ -1,6 +1,10 @@
 const grid = document.getElementById("project-grid");
 
-for (const project of PROJECTS) {
+// Released first, then built, then in development; sort() is stable, so the list order holds within a status.
+const STATUS_ORDER = ["live", "built", "dev"];
+const ordered = [...PROJECTS].sort((a, b) => STATUS_ORDER.indexOf(a.statusClass) - STATUS_ORDER.indexOf(b.statusClass));
+
+for (const project of ordered) {
   const card = document.createElement("a");
   card.className = "project-card";
   card.href = `apps/${project.slug}.html`;
