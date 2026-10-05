@@ -55,12 +55,7 @@ pipeline {
         stage('Dependency scan: Trivy') {
             steps {
                 script {
-                    docker.image('aquasec/trivy:latest').inside(
-                        "--network ci-internal -v trivy-cache-${env.CACHE_KEY}:/root/.cache/trivy --entrypoint=\"\""
-                    ) {
-                        sh 'trivy fs --scanners vuln --severity HIGH,CRITICAL --format json ' +
-                           '--output trivy-report.json . || true'
-                    }
+                    trivyScan(blocking: false)
                 }
             }
         }
