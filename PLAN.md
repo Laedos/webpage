@@ -15,6 +15,8 @@ and a "Play now" link, since it really is deployed (play.sbdevworks.com).
 Updated 2026-10-02: Dzieńki added (`apps/dzienki.html`, four phone screenshots of the demo preschool),
 and the grid now orders cards by status (Live, then built, then in development) in `script.js`,
 whatever the order in `projects.js`.
+Updated 2026-10-05: Dzieńki renamed to Mój Dzionek (`apps/mojdzionek.html`, `assets/shots/mojdzionek-*.png`);
+"In development" became "MVP ready" the same day.
 
 ## Next steps
 

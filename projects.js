@@ -43,13 +43,13 @@ const PROJECTS = [
     imageTall: false,
   },
   {
-    name: "Dzieńki",
-    slug: "dzienki",
+    name: "Mój Dzionek",
+    slug: "mojdzionek",
     status: "Built, not yet released",
     statusClass: "built",
     blurb: "A preschool's day in parents' pockets: meals, naps, messages, absences and who is picking up.",
     tags: ["React Native","Expo","Kotlin","Ktor"],
-    image: "assets/shots/dzienki-1.png",
+    image: "assets/shots/mojdzionek-1.png",
     imageTall: true,
   },
   {
