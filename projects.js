@@ -4,7 +4,7 @@
 //
 // name:        project name
 // slug:        detail page filename (apps/<slug>.html) and screenshot prefix (assets/shots/<slug>-N.png)
-// status:      one of "Live", "Built, not yet released", "In development" (statusClass matches it).
+// status:      one of "Live", "Built, not yet released", "MVP ready" (statusClass matches it).
 //              The grid shows them in that order (script.js sorts by status); within one status, in
 //              the order listed here.
 // blurb:       one sentence, what it does for people
@@ -55,8 +55,8 @@ const PROJECTS = [
   {
     name: "Handoffly",
     slug: "handoffly",
-    status: "In development",
-    statusClass: "dev",
+    status: "MVP ready",
+    statusClass: "mvp",
     blurb: "Everything a dev team runs around its code, in one place: on-call, code review, standups, incidents, Kanban and a wiki.",
     tags: ["Kotlin","Ktor","React","React Native"],
     image: "assets/shots/handoffly-1.jpg",
@@ -65,8 +65,8 @@ const PROJECTS = [
   {
     name: "Odomo",
     slug: "odomo",
-    status: "In development",
-    statusClass: "dev",
+    status: "MVP ready",
+    statusClass: "mvp",
     blurb: "Maintenance, costs and paperwork for every vehicle you own.",
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
     image: "assets/shots/odomo-1.png",
@@ -75,8 +75,8 @@ const PROJECTS = [
   {
     name: "ArcheryHelper",
     slug: "archeryhelper",
-    status: "In development",
-    statusClass: "dev",
+    status: "MVP ready",
+    statusClass: "mvp",
     blurb: "Gear, practice sessions, scores and tuning for archers, in one Android app.",
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
     image: "assets/shots/archeryhelper-1.png",
@@ -85,8 +85,8 @@ const PROJECTS = [
   {
     name: "HavenEasy",
     slug: "haveneasy",
-    status: "In development",
-    statusClass: "dev",
+    status: "MVP ready",
+    statusClass: "mvp",
     blurb: "Tasks, shopping, bills and chores for a shared household, in sync for everyone at home.",
     tags: ["Android","Kotlin","Jetpack Compose","Ktor"],
     image: "assets/shots/haveneasy-1.png",
@@ -95,8 +95,8 @@ const PROJECTS = [
   {
     name: "procrast.io",
     slug: "procrastio",
-    status: "In development",
-    statusClass: "dev",
+    status: "MVP ready",
+    statusClass: "mvp",
     blurb: "A desktop focus timer that blocks distracting websites, with an Android companion.",
     tags: ["Kotlin","JavaFX","Android","Ktor"],
     image: "assets/shots/procrastio-1.png",

@@ -24,8 +24,8 @@ apps/         one detail page per project (apps/<slug>.html)
    {
      name: "MyNewApp",
      slug: "my-new-app",                      // apps/my-new-app.html, assets/shots/my-new-app-N.png
-     status: "In development",                // "Live", "Built, not yet released" or "In development"
-     statusClass: "dev",                      // live, built or dev, matching the status
+     status: "MVP ready",                     // "Live", "Built, not yet released" or "MVP ready"
+     statusClass: "mvp",                      // live, built or mvp, matching the status
      blurb: "One sentence about what it does for people.",
      tags: ["Android", "Kotlin"],             // the same tags as the detail page, same order
      image: "assets/shots/my-new-app-1.png",  // card thumbnail, or null

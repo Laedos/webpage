@@ -1,7 +1,7 @@
 const grid = document.getElementById("project-grid");
 
-// Released first, then built, then in development; sort() is stable, so the list order holds within a status.
-const STATUS_ORDER = ["live", "built", "dev"];
+// Released first, then built, then MVP ready; sort() is stable, so the list order holds within a status.
+const STATUS_ORDER = ["live", "built", "mvp"];
 const ordered = [...PROJECTS].sort((a, b) => STATUS_ORDER.indexOf(a.statusClass) - STATUS_ORDER.indexOf(b.statusClass));
 
 for (const project of ordered) {

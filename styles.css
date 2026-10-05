@@ -344,7 +344,7 @@ a.project-card:hover {
   --pill: #8fb8ff;
 }
 
-.status-pill.dev {
+.status-pill.mvp {
   --pill: #ffcf7a;
 }
 
