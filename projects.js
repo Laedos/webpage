@@ -49,7 +49,7 @@ const PROJECTS = [
     statusClass: "built",
     blurb: "A preschool's day in parents' pockets: the daily report, messages, absences, pickups and a calendar, with a web panel for the director.",
     tags: ["React Native","Expo","Kotlin","Ktor"],
-    image: "assets/shots/mojdzionek-1.png",
+    image: "assets/shots/mojdzionek-1.png?v=2",
     imageTall: true,
   },
   {
