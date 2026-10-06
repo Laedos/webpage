@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mój Dzionek — SB Dev Works</title>
-  <meta name="description" content="Mój Dzionek: a preschool's day in parents' pockets — meals, naps, messages, absences and who is picking up, for Polish preschools and the families they serve." />
+  <meta name="description" content="Mój Dzionek: a preschool's day in parents' pockets — the daily report, messages, absences, pickups, a calendar and the menu, with a web panel for the director." />
   <link rel="canonical" href="https://sbdevworks.com/apps/mojdzionek.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SB Dev Works" />
   <meta property="og:title" content="Mój Dzionek — SB Dev Works" />
-  <meta property="og:description" content="Mój Dzionek: a preschool's day in parents' pockets — meals, naps, messages, absences and who is picking up, for Polish preschools and the families they serve." />
+  <meta property="og:description" content="Mój Dzionek: a preschool's day in parents' pockets — the daily report, messages, absences, pickups, a calendar and the menu, with a web panel for the director." />
   <meta property="og:url" content="https://sbdevworks.com/apps/mojdzionek.html" />
   <meta property="og:image" content="https://sbdevworks.com/assets/shots/mojdzionek-1.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -39,7 +39,7 @@
       <section class="detail-hero">
         <div class="status-pill built">Built, not yet released</div>
         <h1>Mój Dzionek</h1>
-        <p class="detail-tagline">A preschool’s day in parents’ pockets: meals, naps, messages, absences and who is picking up, for Polish preschools and the families they serve.</p>
+        <p class="detail-tagline">A preschool’s day in parents’ pockets: the daily report, messages and a group chat, absences, pickups, a calendar and the menu, with a web panel for the director. Made for Polish preschools and the families they serve.</p>
         <div class="tags">
           <span class="tag">React Native</span>
           <span class="tag">Expo</span>
@@ -49,31 +49,70 @@
       </section>
 
       <section class="detail-section">
-        <h2>Screenshots</h2>
-        <div class="gallery">
-          <a href="../assets/shots/mojdzionek-1.png"><img src="../assets/shots/mojdzionek-1.png" alt="A parent’s view of their child’s day: arrival, meals, a walk, mood and nap, and who is collecting her today" loading="lazy" /></a>
-          <a href="../assets/shots/mojdzionek-2.png"><img src="../assets/shots/mojdzionek-2.png" alt="A conversation between a parent and the group’s teachers, with read receipts" loading="lazy" /></a>
-          <a href="../assets/shots/mojdzionek-3.png"><img src="../assets/shots/mojdzionek-3.png" alt="The teacher’s group day: one entry saved for the whole group at once, with allergies flagged" loading="lazy" /></a>
-          <a href="../assets/shots/mojdzionek-4.png"><img src="../assets/shots/mojdzionek-4.png" alt="The week’s menu with the kitchen’s count of meals per group after absences" loading="lazy" /></a>
-        </div>
-      </section>
-
-      <section class="detail-section">
         <h2>Overview</h2>
-        <p>Mój Dzionek (Polish for “my little day”) connects a preschool with the families it looks after. Teachers record the day as it happens — who arrived, what they ate, how long they slept — and parents see it on their phones the same afternoon, along with messages from the group’s teachers and announcements from the director.</p>
-        <p>It is built around how a preschool group actually works: one shared tablet per group with a personal PIN for each teacher, entries made for the whole group in one tap, and the day-to-day logistics of absences, meals and pickups handled in the same place. Child data is treated with care: health details only with a parent’s consent, nothing personal in notifications, and every change logged.</p>
+        <p>Mój Dzionek (Polish for “my little day”) connects a preschool with the families it looks after. Teachers record the day as it happens — who arrived, what they ate, how long they slept — and parents see it on their phones the same afternoon, along with messages, the group chat, the calendar and the menu.</p>
+        <p>It is built around how a preschool group actually works: one shared tablet per group with a personal PIN for each teacher, entries made for the whole group in one tap, and the day-to-day logistics of absences, meals and pickups handled in the same place. The director runs the preschool from a web panel. Parents can use the app in Polish, Ukrainian or English. The screenshots show the demo preschool in Polish.</p>
       </section>
 
       <section class="detail-section">
-        <h2>Key features</h2>
+        <h2>For parents</h2>
+        <div class="gallery">
+          <a href="../assets/shots/mojdzionek-1.png"><img src="../assets/shots/mojdzionek-1.png" alt="A child’s day as the parent sees it: arrival, breakfast, a walk, painting and lunch, with the grandmother chosen to collect her today" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-2.png"><img src="../assets/shots/mojdzionek-2.png" alt="The month calendar: green days present, a red day absent, events counted per day and an outing card for the selected day, with the month’s totals" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-3.png"><img src="../assets/shots/mojdzionek-3.png" alt="The group chat of the Motylki group, with the director, a teacher and a parent" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-4.png"><img src="../assets/shots/mojdzionek-4.png" alt="Reporting an absence, with past and upcoming absences and their cancelled meals" loading="lazy" /></a>
+        </div>
         <ul class="feature-list">
-          <li>A daily report for every child: arrival and departure, meals, naps, mood, activities and notes</li>
-          <li>Whole-group entry for teachers, then just the exceptions — on a shared group tablet with personal PINs</li>
-          <li>Private conversations between each family and the group’s teachers, plus preschool and group announcements</li>
-          <li>Absence reporting that cancels meals when it arrives before the morning cut-off, with the kitchen’s daily count</li>
-          <li>Who is collecting the child today, with ID checks and court pickup restrictions enforced at the door</li>
-          <li>A shared calendar and the weekly menu, with each child’s allergies right next to it</li>
-          <li>Invite codes for staff and parents, an audit log, data export and account deletion</li>
+          <li>The child’s day on the phone: arrival and departure, meals, nap, mood, activities and the teacher’s notes, with an evening notification that the summary is ready</li>
+          <li>Absences reported in the app; one reported before the morning cut-off cancels that day’s meals too</li>
+          <li>Who is collecting the child today, picked from the people the parent has authorised</li>
+          <li>A month and week calendar with attendance colours, events and holidays, which can also be added to Google or Apple Calendar</li>
+          <li>Private messages with the group’s teachers, a chat for the whole group, and announcements</li>
+          <li>The weekly menu, the app in Polish, Ukrainian or English, and a choice of which notifications to get</li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>For teachers</h2>
+        <div class="gallery">
+          <a href="../assets/shots/mojdzionek-5.png"><img src="../assets/shots/mojdzionek-5.png" alt="The teacher’s group day: three children selected, a note being written for all of them, with recently used notes one tap away" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-6.png"><img src="../assets/shots/mojdzionek-6.png" alt="The week’s menu with the kitchen’s count of meals to prepare per group" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-7.png"><img src="../assets/shots/mojdzionek-7.png" alt="A child’s card from the teacher’s side: allergies, and the people authorised to collect her with their ID document" loading="lazy" /></a>
+        </div>
+        <ul class="feature-list">
+          <li>One entry for the whole group at once — arrival, meal, nap, mood, activity or note — then just the exceptions</li>
+          <li>Recently written notes come back as one-tap suggestions, and naps start at the usual time</li>
+          <li>A shared group tablet with a personal PIN for each teacher, so every entry is signed and private phones stay private</li>
+          <li>Pickup at the door: authorised people with their ID, today’s plan, and court restrictions enforced by the server</li>
+          <li>Allergies next to the menu, the kitchen’s meal count after absences, and last weeks’ menus to copy</li>
+          <li>No notifications outside the preschool’s working hours</li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>For the director</h2>
+        <div class="gallery gallery-wide">
+          <a href="../assets/shots/mojdzionek-8.jpg"><img src="../assets/shots/mojdzionek-8.jpg" alt="The director’s web panel opening on today: each group’s attendance, who is absent and why, and who is collecting whom" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-9.jpg"><img src="../assets/shots/mojdzionek-9.jpg" alt="Writing an announcement to the whole preschool or one group, with how many parents read the earlier ones" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-10.jpg"><img src="../assets/shots/mojdzionek-10.jpg" alt="Printable invite codes, each with a QR code that opens the app with the code filled in" loading="lazy" /></a>
+          <a href="../assets/shots/mojdzionek-11.jpg"><img src="../assets/shots/mojdzionek-11.jpg" alt="The monthly attendance sheet of a group, with absences that cancelled meals, ready to download as CSV" loading="lazy" /></a>
+        </div>
+        <ul class="feature-list">
+          <li>A web panel that opens on today: attendance per group, absences with reasons and planned pickups</li>
+          <li>Announcements to the whole preschool or one group, with read counts</li>
+          <li>Children pasted in from a spreadsheet, groups, the team and their roles, and a first-steps checklist for a new preschool</li>
+          <li>Invite codes to print, each with a QR code for parents to scan</li>
+          <li>The monthly attendance and meals sheet as CSV, and figures on how the preschool uses the app</li>
+          <li>An audit log of every change, opening hours and the meal cut-off, and the subscription with invoice details</li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>Privacy by design</h2>
+        <ul class="feature-list">
+          <li>Everyone sees only their own: a parent their child, a teacher their groups, the director the whole preschool</li>
+          <li>Health details only with a parent’s consent, gone when it is withdrawn; nothing personal in notifications</li>
+          <li>Data export and account deletion in the app; a child’s data removed 90 days after leaving, and someone left in no preschool anonymised</li>
         </ul>
       </section>
 
@@ -81,6 +120,7 @@
         <h2>Built with</h2>
         <dl class="built-with">
           <div><dt>Mobile app</dt><dd>React Native (Expo), TypeScript, React Query</dd></div>
+          <div><dt>Web app</dt><dd>React, Vite, TypeScript (the director’s panel)</dd></div>
           <div><dt>Server</dt><dd>Kotlin, Ktor, Koin, Exposed, Flyway, PostgreSQL</dd></div>
           <div><dt>Architecture</dt><dd>Hexagonal (ports and adapters), push notifications through Expo</dd></div>
         </dl>

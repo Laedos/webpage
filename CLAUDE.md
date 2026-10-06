@@ -55,6 +55,9 @@ No automated tests exist and none are planned (static content, nothing to unit-t
 - **"Built with"** is a `<dl class="built-with">` with one row per part (Android app, Web app,
   Mobile app, Desktop app, Server or Sync server, Architecture), and names every part the
   features rely on. A sync feature means the sync server is listed.
+- **An app with several kinds of user** (Mój Dzionek: parent, teacher, director) may replace
+  "Screenshots" + "Key features" with one section per role, each a gallery and its 4–6 feature
+  bullets (`.gallery-wide` for desktop shots). Other pages keep the single gallery.
 - **Screenshots** live in `assets/shots/<slug>-N.png`. The first one is also the card thumbnail and
   the page's `og:image`. Every image has real alt text.
 - **No GitHub link.** The repos are private, so the profile shows almost nothing.

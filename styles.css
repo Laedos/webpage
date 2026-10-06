@@ -481,3 +481,12 @@ button:focus-visible {
 .detail-section p + p {
   margin-top: 12px;
 }
+
+/* Wide screenshots (a web panel) next to phone ones: fewer, larger columns. */
+.gallery-wide {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.detail-section .gallery + .feature-list {
+  margin-top: 24px;
+}
