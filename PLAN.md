@@ -17,6 +17,8 @@ and the grid now orders cards by status (Live, then built, then in development) 
 whatever the order in `projects.js`.
 Updated 2026-10-05: Dzieńki renamed to Mój Dzionek (`apps/mojdzionek.html`, `assets/shots/mojdzionek-*.png`);
 "In development" became "MVP ready" the same day.
+Updated 2026-10-09: Mój Dzionek's group photo gallery (consent register, retention) added to its blurb
+and detail page; no new screenshots yet.
 
 ## Next steps
 
