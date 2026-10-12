@@ -4,7 +4,7 @@
 //
 // name:        project name
 // slug:        detail page filename (apps/<slug>.html) and screenshot prefix (assets/shots/<slug>-N.png)
-// status:      one of "Live", "Built, not yet released", "MVP ready" (statusClass matches it).
+// status:      one of "Live", "Built, not yet released", "MVP ready", "In development" (statusClass matches it).
 //              The grid shows them in that order (script.js sorts by status); within one status, in
 //              the order listed here.
 // blurb:       one sentence, what it does for people
@@ -100,6 +100,16 @@ const PROJECTS = [
     blurb: "A desktop focus timer that blocks distracting websites, with an Android companion.",
     tags: ["Kotlin","JavaFX","Android","Ktor"],
     image: "assets/shots/procrastio-1.png",
+    imageTall: true,
+  },
+  {
+    name: "Brown Map",
+    slug: "brownmap",
+    status: "In development",
+    statusClass: "dev",
+    blurb: "A silly social map of every place you have ever pooped, with friends, groups and synchronised Squad Drops.",
+    tags: ["React Native","Expo","Kotlin","Ktor"],
+    image: null,
     imageTall: true,
   },
 ];

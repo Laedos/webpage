@@ -348,6 +348,10 @@ a.project-card:hover {
   --pill: #ffcf7a;
 }
 
+.status-pill.dev {
+  --pill: #d4a373;
+}
+
 /* Hero actions */
 
 .hero-actions {

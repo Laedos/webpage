@@ -45,9 +45,10 @@ No automated tests exist and none are planned (static content, nothing to unit-t
 ## Content conventions (set 2026-09-18)
 
 - **Voice:** first person singular. It's one developer's portfolio ("I build…"), never "we".
-- **Status:** exactly one of three labels, identical on the card and the detail page: `Live`
-  (someone can use it right now, with a link), `Built, not yet released`, or `MVP ready` (a working MVP, development paused).
-  Each has its own pill colour (`.status-pill.live` / `.built` / `.mvp`).
+- **Status:** exactly one of four labels, identical on the card and the detail page: `Live`
+  (someone can use it right now, with a link), `Built, not yet released`, `MVP ready` (a working MVP, development paused),
+  or `In development` (being built right now, added 2026-10-12 for Brown Map). Each has its own pill colour
+  (`.status-pill.live` / `.built` / `.mvp` / `.dev`).
 - **Copy:** lead with what the product does for people; engineering detail belongs in "Built with"
   and the About section. Features are 6–8 short bullets, written for a user.
 - **Tags:** at most four, the same list and order on the card and the detail page. Use the full

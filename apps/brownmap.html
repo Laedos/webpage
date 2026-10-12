@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brown Map — SB Dev Works</title>
+  <meta name="description" content="Brown Map: a silly social map of every place you have ever pooped, with friends, groups and synchronised Squad Drops." />
+  <link rel="canonical" href="https://sbdevworks.com/apps/brownmap.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SB Dev Works" />
+  <meta property="og:title" content="Brown Map — SB Dev Works" />
+  <meta property="og:description" content="Brown Map: a silly social map of every place you have ever pooped, with friends, groups and synchronised Squad Drops." />
+  <meta property="og:url" content="https://sbdevworks.com/apps/brownmap.html" />
+  <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo-64.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <img src="../assets/logo-64.png" alt="" class="brand-logo" width="32" height="32" />
+        <span class="brand-name">SB Dev Works</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+
+      <section class="detail-hero">
+        <div class="status-pill dev">In development</div>
+        <h1>Brown Map</h1>
+        <p class="detail-tagline">A silly social map of every place you have ever pooped. Pin each throne, rate it, see where your friends went, and poop together with your group in a synchronised Squad Drop.</p>
+        <div class="tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Expo</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Ktor</span>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Overview</h2>
+        <p>Brown Map is a joke app taken seriously. Every time nature calls, one tap drops an emoji pin where you are, rated from “never again” to “royal throne”. Over time your map fills up with every office, train, forest and grandma’s bathroom you have ever visited.</p>
+        <p>The fun is in sharing it: friends see each other’s pins, groups get their own map and feed, and a Squad Drop pings the whole group to go at once and keeps score. The jokes are loud, but location is treated with care: nothing is public, and pins near home are blurred before anyone else sees them.</p>
+        <p>Logging drops on your own map works today; friends, groups, Squad Drops and badges are being built now. Screenshots will follow.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Key features</h2>
+        <ul class="feature-list">
+          <li>One tap logs a drop where you are, with an emoji pin, a 1–5 throne rating and an optional Bristol scale</li>
+          <li>Your own map of every drop, plus a history to look back on, edit or quietly flush</li>
+          <li>Each drop is for friends or just for you</li>
+          <li>Friends and their pins on the map, with your pins near home blurred to an area</li>
+          <li>Groups with their own map, a feed and reactions</li>
+          <li>Squad Drops: one tap pings the group, and whoever drops within 15 minutes counts as synchronised</li>
+          <li>Streaks, badges for countries and cities, and a group leaderboard</li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>Built with</h2>
+        <dl class="built-with">
+          <div><dt>Mobile app</dt><dd>React Native (Expo), TypeScript, React Query, react-native-maps</dd></div>
+          <div><dt>Server</dt><dd>Kotlin, Ktor, Koin, Exposed, Flyway, PostgreSQL</dd></div>
+          <div><dt>Architecture</dt><dd>Hexagonal (ports and adapters)</dd></div>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SB Dev Works</p>
+    </div>
+  </footer>
+
+  <script src="../year.js"></script>
+</body>
+</html>
