@@ -7,3 +7,6 @@ Thumbs.db
 
 # Vite cache, if the site is ever served locally with Vite
 .vite/
+
+# Local-only
+.claude/settings.local.json
