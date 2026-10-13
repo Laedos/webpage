@@ -105,11 +105,11 @@ const PROJECTS = [
   {
     name: "Brown Map",
     slug: "brownmap",
-    status: "In development",
-    statusClass: "dev",
+    status: "Built, not yet released",
+    statusClass: "built",
     blurb: "A silly social map of every place you have ever pooped, with friends, groups and synchronised Squad Drops.",
     tags: ["React Native","Expo","Kotlin","Ktor"],
-    image: null,
+    image: "assets/shots/brownmap-1.jpg",
     imageTall: true,
   },
 ];
