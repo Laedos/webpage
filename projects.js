@@ -53,13 +53,13 @@ const PROJECTS = [
     imageTall: true,
   },
   {
-    name: "Handoffly",
-    slug: "handoffly",
+    name: "Zium",
+    slug: "zium",
     status: "MVP ready",
     statusClass: "mvp",
     blurb: "Everything a dev team runs around its code, in one place: on-call, code review, standups, incidents, Kanban and a wiki.",
     tags: ["Kotlin","Ktor","React","React Native"],
-    image: "assets/shots/handoffly-1.jpg",
+    image: "assets/shots/zium-1.jpg",
     imageTall: false,
   },
   {

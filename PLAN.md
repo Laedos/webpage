@@ -10,6 +10,8 @@ apps have been retired (merged into RotaHub, archived on GitHub) — `apps/pairp
 `apps/shiftloop.html` removed, `apps/rotahub.html` added. Updated 2026-09-02: RotaHub renamed to
 Handoffly (the app outgrew "rotation hub" — it's a general dev-team platform now) —
 `apps/rotahub.html` renamed to `apps/handoffly.html`, `projects.js` entry updated to match.
+Updated 2026-10-19: Handoffly renamed to Zium — `apps/handoffly.html` → `apps/zium.html`,
+`assets/shots/handoffly-N.jpg` → `zium-N.jpg`, `projects.js` entry updated.
 Updated 2026-09-18: Arcade added (`apps/arcade.html`), the first page with a "Live" status pill
 and a "Play now" link, since it really is deployed (play.sbdevworks.com).
 Updated 2026-10-02: Dzieńki added (`apps/dzienki.html`, four phone screenshots of the demo preschool),
