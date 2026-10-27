@@ -12,7 +12,7 @@
 // dashboard for manual review; they just don't block the build here.
 //
 // Gitleaks + Trivy: same tools/shape as every sibling repo's pipeline, report-only for now
-// (`|| true`) — matches RentEasy's rollout. Trivy is expected to find essentially nothing here
+// (`|| true`) — matches Doorwell's rollout. Trivy is expected to find essentially nothing here
 // (no package.json/dependency manifest exists in this repo to scan), kept anyway for pipeline-
 // shape consistency across all sibling repos rather than carving out an exception.
 pipeline {
