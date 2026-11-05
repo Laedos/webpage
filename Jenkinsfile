@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                     runSonarAnalysis {
-                        docker.image('sonarsource/sonar-scanner-cli:latest').inside('--network ci-internal') {
+                        docker.image(scannerImage('sonar-scanner')).inside('--network ci-internal') {
                             sh 'sonar-scanner -Dsonar.projectKey=webpage -Dsonar.projectName=webpage ' +
                                '-Dsonar.sources=. -Dsonar.exclusions=assets/**'
                         }
@@ -45,7 +45,7 @@ pipeline {
                     // which turns .inside()'s keep-container-alive `cat` placeholder into `gitleaks
                     // cat` (an unknown subcommand) and kills the container before Jenkins can exec
                     // into it ("container is not running"). Same fix applied to Trivy below.
-                    docker.image('zricethezav/gitleaks:latest').inside('--entrypoint=""') {
+                    docker.image(scannerImage('gitleaks')).inside('--entrypoint=""') {
                         sh 'gitleaks detect --source=. -v --redact --report-format=json ' +
                            '--report-path=gitleaks-report.json || true'
                     }
