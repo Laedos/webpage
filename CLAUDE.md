@@ -32,6 +32,9 @@ generated).
 - `apps/*.html` pages are static copies of each other's structure (status, title, tagline, tags,
   screenshots, overview, features, "Built with") — when changing that structure, update the existing pages too so they
   stay consistent, don't let them drift into different layouts.
+- `styles.css`, `projects.js` and `script.js` are linked with a `?v=<date>` query because GitHub
+  Pages lets browsers cache them for 10 minutes. Changing one of them bumps that date everywhere
+  it's linked (`index.html` and every `apps/*.html`), or visitors see the old version.
 - `styles.css` is shared by every page (homepage + all `apps/*.html`) — a class added for one page
   is available everywhere; check other pages aren't affected before renaming/removing a class.
 - Keep the project entries in `projects.js` in sync with what actually exists under `C:\Dev` —
