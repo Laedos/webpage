@@ -13,6 +13,26 @@
 // imageTall:   true for a phone screenshot, so the card crops it from the middle
 const PROJECTS = [
   {
+    name: "Mój Dzionek",
+    slug: "mojdzionek",
+    status: "Live",
+    statusClass: "live",
+    blurb: "A preschool's day in parents' pockets: the daily report, messages, notes, absences, pickups, a calendar, the group's photo gallery and the month's payments, with a web panel for the director.",
+    tags: ["React Native","Expo","Kotlin","Ktor"],
+    image: "assets/shots/mojdzionek-1.png?v=2",
+    imageTall: true,
+  },
+  {
+    name: "Zium",
+    slug: "zium",
+    status: "Live",
+    statusClass: "live",
+    blurb: "Everything a dev team runs around its code, in one place: on-call, code review, standups, incidents, Kanban and a wiki.",
+    tags: ["Kotlin","Ktor","React","React Native"],
+    image: "assets/shots/zium-1.jpg",
+    imageTall: false,
+  },
+  {
     name: "Arcade",
     slug: "arcade",
     status: "Live",
@@ -40,26 +60,6 @@ const PROJECTS = [
     blurb: "Create a poll in seconds and share the link. No account needed.",
     tags: ["React","TypeScript","Kotlin","Ktor"],
     image: "assets/shots/polldrop-1.jpg",
-    imageTall: false,
-  },
-  {
-    name: "Mój Dzionek",
-    slug: "mojdzionek",
-    status: "Built, not yet released",
-    statusClass: "built",
-    blurb: "A preschool's day in parents' pockets: the daily report, messages, notes, absences, pickups, a calendar, the group's photo gallery and the month's payments, with a web panel for the director.",
-    tags: ["React Native","Expo","Kotlin","Ktor"],
-    image: "assets/shots/mojdzionek-1.png?v=2",
-    imageTall: true,
-  },
-  {
-    name: "Zium",
-    slug: "zium",
-    status: "MVP ready",
-    statusClass: "mvp",
-    blurb: "Everything a dev team runs around its code, in one place: on-call, code review, standups, incidents, Kanban and a wiki.",
-    tags: ["Kotlin","Ktor","React","React Native"],
-    image: "assets/shots/zium-1.jpg",
     imageTall: false,
   },
   {

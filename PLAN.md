@@ -21,6 +21,10 @@ Updated 2026-10-05: Dzieńki renamed to Mój Dzionek (`apps/mojdzionek.html`, `a
 "In development" became "MVP ready" the same day.
 Updated 2026-10-09: Mój Dzionek's group photo gallery (consent register, retention) added to its blurb
 and detail page; no new screenshots yet.
+Updated 2026-11-09: Mój Dzionek and Zium marked Live, listed first in `projects.js`, each detail page
+with a link to its site (mojdzionek.sbdevworks.com, zium.sbdevworks.com). About rewritten around the
+career summary (ten years of Java, ERP, AWS/Docker, team lead), and the homepage sections share one
+72px rhythm.
 
 ## Next steps
 
