@@ -14,6 +14,8 @@ year.js       footer year, shared by every page
 assets/       logo.png (source), logo-64.png / logo-176.png (sizes the pages use),
               social.png (link-preview image), shots/<slug>-N.png (project screenshots)
 apps/         one detail page per project (apps/<slug>.html)
+sitemap.xml   canonical URL of every page, for search engines
+robots.txt    points crawlers at the sitemap
 ```
 
 ## Adding a project
@@ -35,6 +37,8 @@ apps/         one detail page per project (apps/<slug>.html)
 2. Copy an existing file in `apps/` to `apps/<slug>.html` and edit the status, title, tagline,
    tags, screenshots, overview, features, and "Built with" sections. Point its Open Graph tags at
    the new page and its first screenshot. See CLAUDE.md's "Content conventions" for the rules.
+
+3. Add the page's canonical URL to `sitemap.xml`.
 
 The homepage card is generated automatically from `projects.js` and links to
 `apps/<slug>.html`.
@@ -68,7 +72,9 @@ old `https://laedos.github.io/webpage/` URL keeps working as a GitHub-provided f
 
 ## Local preview
 
-No server required — just open `index.html` in a browser. Or, for a local dev server:
+Opening `index.html` straight from disk works for the homepage, but the app pages link home
+with `../`, which a `file://` browser shows as a folder listing. Use a local server to click
+through:
 
 ```bash
 python3 -m http.server 8000

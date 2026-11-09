@@ -25,6 +25,10 @@ generated).
   and let `script.js` render it.
 - Every entry in `PROJECTS` needs a matching `apps/<slug>.html` (the card links to
   `apps/${slug}.html` unconditionally) — adding one without the other leaves a dead link.
+- `sitemap.xml` lists the homepage and every `apps/<slug>.html` by its canonical URL. Adding,
+  renaming or removing a page updates it too.
+- Links back to the homepage use `../` (or `../#section`), never `../index.html`: Google indexes
+  `/index.html` as a duplicate of `/` and reports it in Search Console.
 - `apps/*.html` pages are static copies of each other's structure (status, title, tagline, tags,
   screenshots, overview, features, "Built with") — when changing that structure, update the existing pages too so they
   stay consistent, don't let them drift into different layouts.
