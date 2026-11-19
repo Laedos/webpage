@@ -4,8 +4,8 @@
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V4 · weakest: P, a portfolio argues little; it leads with what is live and lets the paused work go unsaid */
 /* Hallmark · dropped "I care about high-quality code" and "I keep growing as both an engineer and a team leader" paragraphs, the About cut to three session entries · 58 names the screen budget */
 /* Hallmark · redesign: restyle on apps/*.html · their markup is kept, the shared stylesheet carries the new system */
-@import url("./tokens.css?v=2026-11-19b");
-@import url("./base.css?v=2026-11-19b");
+@import url("./tokens.css?v=2026-11-19c");
+@import url("./base.css?v=2026-11-19c");
 
 :root {
   --header-height: 64px;
@@ -560,6 +560,12 @@ a:active {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+/* A desktop shot beside a phone shot, both the same height. */
+.gallery-pair {
+  grid-template-columns: minmax(0, 3.55fr) minmax(0, 1fr);
+  align-items: start;
+}
+
 .gallery a {
   display: block;
   overflow: hidden;
@@ -647,7 +653,8 @@ a:active {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .gallery-wide {
+  .gallery-wide,
+  .gallery-pair {
     grid-template-columns: minmax(0, 1fr);
   }
 }

@@ -16,10 +16,10 @@ const PROJECTS = [
     slug: "mojdzionek",
     status: "Live",
     statusClass: "live",
-    blurb: "A preschool's day in parents' pockets: the daily report, messages, notes, absences, pickups, a calendar, the group's photo gallery and the month's payments, with a web panel for the director.",
+    blurb: "A preschool's day in parents' pockets: everyday contact between the preschool and families in one app, with a web panel for the director.",
     tags: ["React Native","Expo","Kotlin","Ktor"],
-    image: "assets/shots/mojdzionek-1.png?v=2",
-    imageTall: true,
+    image: "assets/shots/mojdzionek-1.png?v=3",
+    imageTall: false,
   },
   {
     name: "Zium",
