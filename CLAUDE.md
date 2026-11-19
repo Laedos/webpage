@@ -33,8 +33,9 @@ generated).
   screenshots, overview, features, "Built with") — when changing that structure, update the existing pages too so they
   stay consistent, don't let them drift into different layouts.
 - **Homepage visibility follows status:** `Live` apps get a full row with a screenshot and a link,
-  `Built, not yet released` apps a one-line teaser with no link, and `MVP ready` / `In development`
-  apps are hidden: their `apps/<slug>.html` stays but carries `<meta name="robots" content="noindex">`
+  `Built, not yet released` apps a one-line teaser with no link, `MVP ready` / `In development`
+  apps nothing. Every app that is not `Live`
+  (teaser or hidden) keeps its `apps/<slug>.html` with `<meta name="robots" content="noindex">`
   and is left out of `sitemap.xml`. Releasing an app means removing that tag and adding it back.
 - The design is a Hallmark redesign (Terminal theme, 2026-11-19): every colour and font goes
   through `tokens.css`; never a literal colour or `font-family` in `styles.css`. The run records sit
