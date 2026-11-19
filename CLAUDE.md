@@ -39,7 +39,7 @@ generated).
 - The design is a Hallmark redesign (Terminal theme, 2026-11-19): every colour and font goes
   through `tokens.css`; never a literal colour or `font-family` in `styles.css`. The run records sit
   in the git-ignored `.hallmark/`.
-- `styles.css`, `projects.js`, `script.js`, `logo-glyphs.js` and `logo-art.js` are linked with a `?v=<date>` query because GitHub
+- `styles.css`, `projects.js`, `script.js`, `logo-glyphs.js` and `logo-art.js` are linked with a `?v=<date>` query (and `styles.css` imports `tokens.css`/`base.css` with the same one) because GitHub
   Pages lets browsers cache them for 10 minutes. Changing one of them bumps that date everywhere
   it's linked (`index.html` and every `apps/*.html`), or visitors see the old version.
 - `styles.css` is shared by every page (homepage + all `apps/*.html`) — a class added for one page

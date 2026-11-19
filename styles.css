@@ -1,11 +1,11 @@
-/* Hallmark · shape: Index (swapped from Narrative Workflow: the apps are the page) · genre: atmospheric · theme: Terminal (by request) · redesign: full · draw: a5422c
+/* Hallmark · shape: Index (swapped from Narrative Workflow: the apps are the page) · genre: atmospheric · theme: Terminal (by request, hue moved from green to the logo blue at 252) · redesign: full · draw: a5422c
  * hero: Stage (swapped from Poster by request: the glyph logo beside the text) · nav: edge-aligned (swapped from search-led: three destinations, nothing to search) · footer: mast · imagery: the product (screenshots) and the logo printed in glyphs · signature: the SB logo printed in the apps' own names, resolving from noise
- * axes: dark/mono/chromatic-green · posture: committed · contrast: pass · fold: pass · job: hire · v2.0.0 */
+ * axes: dark/mono/chromatic-blue · posture: committed · contrast: pass · fold: pass · job: hire · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V4 · weakest: P, a portfolio argues little; it leads with what is live and lets the paused work go unsaid */
 /* Hallmark · dropped "I care about high-quality code" and "I keep growing as both an engineer and a team leader" paragraphs, the About cut to three session entries · 58 names the screen budget */
 /* Hallmark · redesign: restyle on apps/*.html · their markup is kept, the shared stylesheet carries the new system */
-@import url("./tokens.css");
-@import url("./base.css");
+@import url("./tokens.css?v=2026-11-19b");
+@import url("./base.css?v=2026-11-19b");
 
 :root {
   --header-height: 64px;

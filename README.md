@@ -8,7 +8,7 @@ section. Plain HTML/CSS/JS — no build step, no dependencies, no framework.
 ```
 index.html    page structure
 styles.css    all styling (shared by the homepage and app detail pages); imports tokens.css and base.css
-tokens.css    colours, type, spacing (the Terminal theme: Martian Mono on green-black)
+tokens.css    colours, type, spacing (the Terminal theme: Martian Mono on blue-black, the logo blue as the accent)
 base.css      base element rules
 projects.js   portfolio data (edit this to add/remove projects)
 script.js     renders the homepage: Live apps as full rows, Built ones as teasers, the rest hidden
