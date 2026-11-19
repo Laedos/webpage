@@ -5,8 +5,7 @@
 // name:        project name
 // slug:        detail page filename (apps/<slug>.html) and screenshot prefix (assets/shots/<slug>-N.png)
 // status:      one of "Live", "Built, not yet released", "MVP ready", "In development" (statusClass matches it).
-//              The grid shows them in that order (script.js sorts by status); within one status, in
-//              the order listed here.
+//              The homepage shows Live apps in full, Built ones as a one-line teaser, and hides the rest.
 // blurb:       one sentence, what it does for people
 // tags:        the same tags as the detail page, in the same order
 // image:       the card thumbnail, the project's first screenshot (or null)

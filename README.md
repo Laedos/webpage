@@ -7,9 +7,13 @@ section. Plain HTML/CSS/JS — no build step, no dependencies, no framework.
 
 ```
 index.html    page structure
-styles.css    all styling (shared by the homepage and app detail pages)
+styles.css    all styling (shared by the homepage and app detail pages); imports tokens.css and base.css
+tokens.css    colours, type, spacing (the Terminal theme: Martian Mono on green-black)
+base.css      base element rules
 projects.js   portfolio data (edit this to add/remove projects)
-script.js     renders the project cards on the homepage
+script.js     renders the homepage: Live apps as full rows, Built ones as teasers, the rest hidden
+logo-glyphs.js  the logo as a grid of brightness levels, generated from assets/logo.png
+logo-art.js   draws that grid on the hero canvas (the <pre> in index.html is the no-script copy)
 year.js       footer year, shared by every page
 assets/       logo.png (source), logo-64.png / logo-176.png (sizes the pages use),
               social.png (link-preview image), shots/<slug>-N.png (project screenshots)

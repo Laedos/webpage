@@ -1,7 +1,7 @@
 # SB Dev Works — webpage
 
-Personal developer landing page for the `laedos`/SB Dev Works portfolio: logo, intro, a
-projects grid generated from data, and a contact section. Plain HTML/CSS/JS — no build step,
+Personal developer landing page for the `laedos`/SB Dev Works portfolio: a hero with the logo
+printed in glyphs, the apps generated from data, an About and a contact section. Plain HTML/CSS/JS — no build step,
 no package manager, no framework, no backend.
 
 Shared engineering conventions (principles, workflow, comments, communication style) live in the
@@ -32,7 +32,14 @@ generated).
 - `apps/*.html` pages are static copies of each other's structure (status, title, tagline, tags,
   screenshots, overview, features, "Built with") — when changing that structure, update the existing pages too so they
   stay consistent, don't let them drift into different layouts.
-- `styles.css`, `projects.js` and `script.js` are linked with a `?v=<date>` query because GitHub
+- **Homepage visibility follows status:** `Live` apps get a full row with a screenshot and a link,
+  `Built, not yet released` apps a one-line teaser with no link, and `MVP ready` / `In development`
+  apps are hidden: their `apps/<slug>.html` stays but carries `<meta name="robots" content="noindex">`
+  and is left out of `sitemap.xml`. Releasing an app means removing that tag and adding it back.
+- The design is a Hallmark redesign (Terminal theme, 2026-11-19): every colour and font goes
+  through `tokens.css`; never a literal colour or `font-family` in `styles.css`. The run records sit
+  in the git-ignored `.hallmark/`.
+- `styles.css`, `projects.js`, `script.js`, `logo-glyphs.js` and `logo-art.js` are linked with a `?v=<date>` query because GitHub
   Pages lets browsers cache them for 10 minutes. Changing one of them bumps that date everywhere
   it's linked (`index.html` and every `apps/*.html`), or visitors see the old version.
 - `styles.css` is shared by every page (homepage + all `apps/*.html`) — a class added for one page

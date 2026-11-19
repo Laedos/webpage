@@ -14,7 +14,11 @@
   <meta property="og:image" content="https://sbdevworks.com/assets/social.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" href="assets/logo-64.png" />
-  <link rel="stylesheet" href="styles.css?v=2026-11-09c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,400..700&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=2026-11-19" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
@@ -34,72 +38,129 @@
 
   <main>
     <section id="top" class="hero">
-      <div class="container">
-        <img src="assets/logo-176.png" alt="" class="hero-logo" width="112" height="112" />
-        <h1>SB Dev Works</h1>
-        <p class="hero-tagline">Ten years of building Java software at scale. Now I make my own apps, end to end.</p>
-        <div class="hero-actions">
-          <a class="button" href="#projects">See my projects</a>
-          <a class="button secondary" href="https://play.sbdevworks.com">Play Arcade</a>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Now I make my own apps.</h1>
+          <p class="lead">End to end, after ten years of building Java at scale.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">See my projects</a>
+            <a class="button secondary" href="https://play.sbdevworks.com">Play Arcade</a>
+          </div>
+        </div>
+        <div class="logo-art" data-logo-art aria-hidden="true">
+          <pre class="logo-art-pre">
+                                                                 mojdzionek
+                                                                 ziumarcaded
+                                                                 oorwellpoll
+                                                                 dropbrownma
+                                                                 pkotlinktor
+                                                                 reacttypesc
+                                                                 riptexpoand
+                                                                 roidjetpack
+                                                                 composepost
+                                                                 gresqldocke
+                                                                 rsbdevworks
+               mojdzionekziumarcadedoorwellpolldropbrownmapko    tlinktorrea   cttypescriptexpoandroidjetpackco
+            mposepostgresqldockersbdevworksmojdzionekziumarca    dedoorwellp   olldropbrownmapkotlinktorreacttypesc
+          riptexpoandroidjetpackcomposepostgresqldockersbdevw    orksmojdzio   nekziumarcadedoorwellpolldropbrownmapko
+         tlinktorreacttypescriptexpoandroidjetpackcomposepost    gresqldocke   rsbdevworksmojdzionekziumarcadedoorwellpol
+        ldropbrownmapkotlinktorreacttypescriptexpoandroidjetp    ackcomposep   ostgresqldockersbdevworksmojdzionekziumarca
+       dedoorwellpolldropbrownmapkotlinktorreacttypescriptex     poandroidje   tpackcomposepostgresqldockersbdevworksmojdzio
+      nekziumarcad                                               edoorwellpo                                 lldropbrownmapko
+      tlinktorrea                                                cttypescrip                                    texpoandroidje
+      tpackcompos                                                epostgresql                                      dockersbdevw
+      orksmojdzione                                              kziumarcade                                       doorwellpoll
+       dropbrownmapkotlinktorreacttypescriptexpoandroi           djetpackcom                                        posepostgre
+        sqldockersbdevworksmojdzionekziumarcadedoorwellpo        lldropbrown                                        mapkotlinkt
+         orreacttypescriptexpoandroidjetpackcomposepostgres      qldockersbd                                         evworksmoj
+           dzionekziumarcadedoorwellpolldropbrownmapkotlinkt     orreacttype                                        scriptexpoa
+             ndroidjetpackcomposepostgresqldockersbdevworksmoj   dzionekzium                                        arcadedoorw
+                 ellpolldropbrownmapkotlinktorreacttypescripte   xpoandroidj                                        etpackcompo
+                                                   sepostgresql  dockersbdev                                       worksmojdzi
+                                                    onekziumarc  adedoorwellp                                    olldropbrownm
+                                                   apkotlinktor   reacttypescri                                ptexpoandroidj
+          etpackcomposepostgresqldockersbdevworksmojdzionekziu     marcadedoorwellpolldropbrownmapkotlinktorreacttypescripte
+        xpoandroidjetpackcomposepostgresqldockersbdevworksmojd      zionekziumarcadedoorwellpolldropbrownmapkotlinktorreact
+       typescriptexpoandroidjetpackcomposepostgresqldockersbd        evworksmojdzionekziumarcadedoorwellpolldropbrownmapk
+      otlinktorreacttypescriptexpoandroidjetpackcomposepost            gresqldockersbdevworksmojdzionekziumarcadedoorwe
+     llpolldropbrownmapkotlinktorreacttypescriptexpoandroi               djetpackcomposepostgresqldockersbdevworksmoj
+    dzionekziumarcadedoorwellpolldropbrownmapkotlinktor                     reacttypescriptexpoandroidjetpackcompo
+    sepostgresqldockersbdevworksmojdzionekziumarcad                              edoorwellpolldropbrownmapko
+</pre>
+          <canvas></canvas>
         </div>
       </div>
     </section>
 
     <section id="projects" class="projects">
       <div class="container">
-        <h2>Projects</h2>
-        <div id="project-grid" class="project-grid"></div>
+        <div class="section-head">
+          <h2>Live</h2>
+          <p class="lead">Three apps you can use today.</p>
+        </div>
+        <ol id="project-grid" class="project-list"></ol>
+      </div>
+    </section>
+
+    <section class="upcoming" aria-labelledby="upcoming-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="upcoming-title">Built, not yet released</h2>
+          <p class="lead">Finished and waiting for launch.</p>
+        </div>
+        <ul id="upcoming-list" class="upcoming-list"></ul>
       </div>
     </section>
 
     <section id="about" class="about">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          I’m a software engineer with over ten years of professional experience building
-          applications in Java. I studied Computer Science at the University of Zielona Góra and,
-          while still a student, started working for leading ERP companies in Poland, which is
-          where my programming skills took shape.
-        </p>
-        <p>
-          Since then I’ve worked with Java, AWS, Docker and the popular frameworks around them,
-          building and leading the development of systems used by thousands of people across
-          Poland and Europe. I care about high-quality code: easy to understand, easy to maintain,
-          and open to change and further improvement.
-        </p>
-        <p>
-          SB Dev Works is where I build my own products. I make Android apps in Kotlin and Jetpack
-          Compose, web apps in React and TypeScript, and the Kotlin and Ktor servers that sit
-          behind them. Every project here is built the same careful way: a clean, layered
-          architecture, automated tests for the rules that matter, and a CI pipeline with
-          code-quality and security checks on every change.
-        </p>
-        <p>
-          I keep growing as both an engineer and a team leader: deepening what I already know and
-          learning new technologies along the way.
-        </p>
+      <div class="container about-inner">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="lead">One developer, the whole stack.</p>
+        </div>
+        <div class="session" role="group" aria-label="About me">
+          <p class="prompt"><span aria-hidden="true">~ $</span> whoami</p>
+          <p>A software engineer with over ten years of professional experience in Java.</p>
+          <p class="prompt"><span aria-hidden="true">~ $</span> cat history</p>
+          <p>Computer Science at the University of Zielona Góra. Started at leading ERP companies in Poland while still a student. Since then: Java, AWS, Docker, and systems used by thousands of people across Poland and Europe, built and led.</p>
+          <p class="prompt"><span aria-hidden="true">~ $</span> cat now</p>
+          <p>Android apps in Kotlin and Jetpack Compose, web apps in React and TypeScript, Kotlin and Ktor servers behind them. Layered architecture, tests for the rules that matter, CI with code-quality and security checks on every change.</p>
+          <p class="prompt"><span aria-hidden="true">~ $</span> <span class="caret" aria-hidden="true"></span></p>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Have an idea or a project in mind? Email me at
-          <a href="mailto:sbdevworks@proton.me">sbdevworks@proton.me</a>.
-        </p>
+      <div class="container contact-inner">
+        <h2>Have an idea or a project in mind?</h2>
+        <div class="mail-well">
+          <a class="mail-address" href="mailto:sbdevworks@proton.me">sbdevworks@proton.me</a>
+          <button class="copy" type="button" data-copy="sbdevworks@proton.me" aria-label="Copy the email address">
+            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path class="copy-icon" d="M5 5V2h9v9h-3M2 5h9v9H2z" /><path class="copy-done" d="M3 8.5l3.5 3.5L13 4.5" /></svg>
+          </button>
+          <span class="copy-status" role="status"></span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> SB Dev Works</p>
+      <p class="footer-mark">SB Dev Works</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://play.sbdevworks.com">Arcade</a>
+      </nav>
+      <p class="footer-legal">&copy; <span id="year"></span> SB Dev Works</p>
     </div>
   </footer>
 
-  <script src="projects.js?v=2026-11-09c"></script>
-  <script src="script.js?v=2026-11-09c"></script>
+  <script src="projects.js?v=2026-11-19"></script>
+  <script src="script.js?v=2026-11-19"></script>
+  <script src="logo-glyphs.js?v=2026-11-19"></script>
+  <script src="logo-art.js?v=2026-11-19"></script>
   <script src="year.js"></script>
 </body>
 </html>
